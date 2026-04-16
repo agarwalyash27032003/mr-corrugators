@@ -1,77 +1,91 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Counter from '../../components/Counter';
+import { Link } from 'react-router-dom';
 
-const About = () => (
-  <section className="py-32 bg-white overflow-hidden">
-    <div className="container mx-auto px-10">
-      <div className="flex flex-col lg:flex-row items-center gap-20">
-        
-        {/* Left Side: Architectural Image Layout */}
-        <div className="lg:w-1/2 relative">
-          <div className="relative z-10 rounded-[3rem] overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000" 
-              className="w-full h-[600px] object-cover" 
-              alt="Founder" 
-            />
-            {/* Soft Overlay to match the reference look */}
-            <div className="absolute inset-0 bg-slate-900/10"></div>
-          </div>
+const About = () => {
+  const stats = [
+    { value: 20.5, suffix: "k", label: "Successfully Trained" },
+    { value: 450, suffix: "+", label: "Students Community" },
+    { value: 20.5, suffix: "k", label: "Successfully Trained" },
+  ]; 
+
+  return (
+    <section className="py-24 bg-white overflow-hidden">
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="flex flex-col lg:flex-row items-center gap-20">
           
-          {/* Minimalist Floating Badge - Reduced size, lighter font */}
-          <div className="absolute -bottom-10 -right-6 lg:right-[-10%] lg:top-1/2 lg:-translate-y-1/2 z-20">
-            <div className="bg-white p-10 rounded-[2.5rem] shadow-[0_40px_100px_rgba(0,0,0,0.08)] border border-slate-100 text-center">
-              <p className="text-5xl font-light text-slate-900 tracking-tighter leading-none">
-                <Counter end={7} suffix="+" />
-              </p>
-              <p className="uppercase text-[10px] font-bold tracking-[0.4em] text-blue-500 mt-3">
-                Years Excellence
-              </p>
+          {/* 1. Left Section: Vertical Stats List */}
+          <div className="flex-none w-full lg:w-[250px] flex flex-col gap-12">
+            {stats.map((stat, index) => (
+              <div key={index} className="flex flex-col items-center lg:items-start text-center lg:text-left">
+                {/* Numbers: Medium weight instead of bold */}
+                <p className="text-5xl font-medium text-slate-900 tracking-tighter leading-none">
+                  <Counter end={stat.value} decimals={1} suffix={stat.suffix} />
+                </p>
+                {/* Label: Normal weight, slightly larger */}
+                <p className="text-[13px] font-normal text-slate-600 mt-3 uppercase tracking-widest">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* 2. Center Section: Image with Overlay */}
+          <div className="flex-1 relative">
+            {/* The Floating 'ABOUT US' Circle Overlay */}
+            <div className="absolute -top-6 -left-10 z-20 w-32 h-32 rounded-full border border-slate-200 bg-white/80 backdrop-blur-sm flex items-center justify-center">
+               <svg viewBox="0 0 100 100" className="w-full h-full p-2 animate-[spin_10s_linear_infinite]">
+                <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                <text className="text-[10px] font-medium uppercase tracking-[0.1em] fill-slate-500">
+                  <textPath href="#circlePath">ABOUT US • ABOUT US • ABOUT US • </textPath>
+                </text>
+              </svg>
             </div>
+            
+            <div className="relative z-10 rounded-2xl overflow-hidden shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000"
+                className="w-full h-[580px] object-cover" 
+                alt="Founder" 
+              />
+            </div>
+          </div>
+
+          {/* 3. Right Section: Text Content & Button */}
+          <div className="flex-1 max-w-lg">
+            {/* Label: Very small and thin */}
+            <div className="flex items-center gap-3 mb-8">
+              <div className="h-[1px] w-8 bg-blue-600"></div>
+              <span className="text-blue-600 text-[10px] font-semibold uppercase tracking-[0.4em]">
+                About Company
+              </span>
+            </div>
+            
+            {/* Heading: Bold only here to define the focal point */}
+            <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.15] mb-10 tracking-tight">
+              Creative agency &<br/> 
+              their best solutions
+            </h2>
+            
+            {/* Description: Normal weight for readability */}
+            <p className="text-lg text-slate-600 font-normal leading-relaxed mb-16">
+              Viverra gravida pretium fusce in placerat orci nulla pellentesque. Aliquet porttitor lacus luctus accumsan tortor.
+            </p>
+            
+            {/* Button: Minimalist with subtle hover */}
+            <Link 
+              to="/about"
+              className="inline-flex items-center gap-4 bg-blue-600 text-white px-9 py-4 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-blue-700 transition-all shadow-md active:scale-95"
+            >
+              Read More
+              <span className="text-sm">→</span>
+            </Link>
           </div>
         </div>
-
-        {/* Right Side: Content Area */}
-        <div className="lg:w-1/2 lg:pl-16">
-          <div className="inline-block text-blue-500 text-[10px] font-bold uppercase tracking-[0.5em] mb-10">
-            About The Company
-          </div>
-          
-          <h2 className="text-5xl md:text-[4.5rem] font-light text-slate-900 leading-[1.1] mb-10 tracking-tight">
-            Built on Trust, <br/> 
-            <span className="text-slate-400 italic font-light">Delivered with Care.</span>
-          </h2>
-          
-          <p className="text-lg text-slate-500 leading-relaxed font-light mb-16 max-w-lg">
-            MR Corrugators is a premier manufacturer in Siliguri. Our founder 
-            envisioned a company that bridged the gap between <span className="text-slate-900 font-normal">high-quality manufacturing</span> and 
-            affordable pricing.
-          </p>
-          
-          {/* Stats Bar - Minimalist Grid */}
-          <div className="grid grid-cols-2 gap-12 pt-12 border-t border-slate-100">
-            <div className="space-y-2">
-              <p className="text-3xl font-light text-slate-900 tracking-tight">
-                <Counter end={500} suffix="+" />
-              </p>
-              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em]">
-                Clients
-              </p>
-            </div>
-            <div className="space-y-2">
-              <p className="text-3xl font-light text-slate-900 tracking-tight">
-                <Counter end={1000} suffix="k+" />
-              </p>
-              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em]">
-                Boxes Produced
-              </p>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default About;

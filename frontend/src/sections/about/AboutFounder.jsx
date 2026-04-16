@@ -1,50 +1,54 @@
 import React from 'react';
 
 const AboutFounder = () => (
-  <section className="py-24 bg-slate-50 overflow-hidden">
-    <div className="container mx-auto px-6">
-      <div className="flex flex-col lg:flex-row items-center gap-20">
+  <section className="py-20 lg:py-0 lg:h-[80vh] flex items-center bg-white overflow-hidden">
+    <div className="container mx-auto px-6 max-w-7xl">
+      <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         
-        {/* Founder Image */}
-        <div className="lg:w-1/2 relative">
-          <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+        {/* Compact Image Container */}
+        <div className="w-full lg:w-5/12 relative group">
+          <div className="relative z-10 rounded-xl overflow-hidden aspect-[4/5] lg:aspect-square bg-slate-100 shadow-2xl shadow-blue-900/5">
             <img 
               src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000" 
-              className="w-full h-[600px] object-cover" 
-              alt="Founder of MR Corrugators" 
+              className="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105" 
+              alt="Yash Agarwal - Founder" 
             />
           </div>
-          {/* Accent Box */}
-          <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl z-0"></div>
+          {/* Subtle Geometric Accent */}
+          <div className="absolute -top-4 -right-4 w-24 h-24 border-t border-r border-blue-600/30 rounded-tr-2xl z-0"></div>
         </div>
 
-        {/* Founder Content */}
-        <div className="lg:w-1/2 space-y-8">
-          <div className="inline-block border-l-4 border-blue-600 pl-4">
-            <h4 className="text-blue-900 font-black text-sm uppercase tracking-widest">Our Leadership</h4>
-            <p className="text-gray-400 text-xs font-bold uppercase">Visionary behind the brand</p>
+        {/* Tightened Content Column */}
+        <div className="w-full lg:w-7/12">
+          {/* Smaller Header Label */}
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-[1px] w-8 bg-blue-600"></div>
+            <span className="text-blue-600 text-[10px] font-bold uppercase tracking-[0.4em]">Leadership</span>
           </div>
 
-          <h3 className="text-5xl font-black text-blue-900 tracking-tighter italic leading-tight">
-            "Eliminating barriers <br/> between <span className="text-blue-600">quality</span> and <span className="text-blue-600">affordability</span>."
+          {/* Compressed Quote */}
+          <h3 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tighter leading-tight mb-8">
+            "Eliminating the barriers between <br/> 
+            <span className="text-slate-300 font-medium">industrial quality</span> and <br/> 
+            <span className="text-blue-600">market accessibility.</span>"
           </h3>
 
-          <div className="space-y-6 text-lg text-gray-600 leading-relaxed font-light">
+          {/* Targeted Prose - Reduced line-height and size for compact feel */}
+          <div className="space-y-4 text-base md:text-lg text-slate-500 font-normal leading-relaxed max-w-2xl">
             <p>
-              The journey of MR Corrugators began with a simple observation by our founder: 
-              the packaging industry was cluttered with middlemen that drove costs up while 
-              diluting material quality.
+              MR Corrugators was founded on a strategic observation: the packaging sector was saturated with inefficiencies that drove costs up while compromising material standards.
             </p>
             <p>
-              By establishing a direct-to-business manufacturing model in Siliguri, our founder 
-              ensured that every local entrepreneur and industrial giant could access 
-              premium-grade packaging without the corporate markup.
+              By establishing a direct-to-enterprise manufacturing ecosystem in Siliguri, we ensure every industrial partner accesses high-performance solutions without the traditional corporate markup.
             </p>
           </div>
 
-          <div className="pt-6">
-            <p className="text-blue-900 font-black text-xl italic uppercase tracking-tighter">Yash Agarwal</p>
-            <p className="text-blue-600 text-sm font-bold uppercase tracking-widest">Founder & Managing Director</p>
+          {/* Minimalist Signature Bar */}
+          <div className="pt-8 mt-8 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <h4 className="text-xl font-bold text-slate-900 tracking-tight">Yash Agarwal</h4>
+              <p className="text-[10px] font-bold text-blue-500 uppercase tracking-[0.3em] mt-1">Founder & Managing Director</p>
+            </div>
           </div>
         </div>
 
