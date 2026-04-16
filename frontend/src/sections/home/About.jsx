@@ -2,68 +2,67 @@ import React from 'react';
 import Counter from '../../components/Counter';
 
 const About = () => (
-  <section className="py-24 bg-white overflow-hidden">
-    <div className="container mx-auto px-6">
-      <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+  <section className="py-32 bg-white overflow-hidden">
+    <div className="container mx-auto px-10">
+      <div className="flex flex-col lg:flex-row items-center gap-20">
         
-        {/* Left Side: Image with Layered Badge */}
+        {/* Left Side: Architectural Image Layout */}
         <div className="lg:w-1/2 relative">
-          <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
+          <div className="relative z-10 rounded-[3rem] overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000" 
-              className="w-full h-[500px] object-cover" 
+              className="w-full h-[600px] object-cover" 
               alt="Founder" 
             />
+            {/* Soft Overlay to match the reference look */}
+            <div className="absolute inset-0 bg-slate-900/10"></div>
           </div>
           
-          {/* Fixed Floating Badge: Positioned at the 'intersection' */}
-          <div className="absolute -bottom-6 -right-6 lg:right-[-20%] lg:top-1/2 lg:-translate-y-1/2 z-20">
-            <div className="bg-blue-600 p-10 md:p-12 rounded-[2rem] text-white shadow-[0_20px_50px_rgba(37,99,235,0.3)] border-4 border-white">
-              <p className="text-6xl font-black leading-none italic tracking-tighter">
+          {/* Minimalist Floating Badge - Reduced size, lighter font */}
+          <div className="absolute -bottom-10 -right-6 lg:right-[-10%] lg:top-1/2 lg:-translate-y-1/2 z-20">
+            <div className="bg-white p-10 rounded-[2.5rem] shadow-[0_40px_100px_rgba(0,0,0,0.08)] border border-slate-100 text-center">
+              <p className="text-5xl font-light text-slate-900 tracking-tighter leading-none">
                 <Counter end={7} suffix="+" />
               </p>
-              <p className="uppercase text-xs font-bold tracking-[0.2em] mt-2 opacity-90">
-                Years of Excellence
+              <p className="uppercase text-[10px] font-bold tracking-[0.4em] text-blue-500 mt-3">
+                Years Excellence
               </p>
             </div>
           </div>
-          
-          {/* Subtle Decorative Background Element */}
-          <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-50 rounded-full z-0"></div>
         </div>
 
         {/* Right Side: Content Area */}
-        <div className="lg:w-1/2 lg:pl-12">
-          <div className="inline-block bg-blue-50 text-blue-700 px-4 py-1 rounded-full text-xs font-black uppercase tracking-[0.2em] mb-6">
+        <div className="lg:w-1/2 lg:pl-16">
+          <div className="inline-block text-blue-500 text-[10px] font-bold uppercase tracking-[0.5em] mb-10">
             About The Company
           </div>
           
-          <h2 className="text-5xl md:text-6xl font-black text-blue-900 leading-[1.1] mb-8 italic">
+          <h2 className="text-5xl md:text-[4.5rem] font-light text-slate-900 leading-[1.1] mb-10 tracking-tight">
             Built on Trust, <br/> 
-            <span className="text-blue-600 not-italic">Delivered with Care.</span>
+            <span className="text-slate-400 italic font-light">Delivered with Care.</span>
           </h2>
           
-          <p className="text-xl text-gray-600 leading-relaxed font-light mb-12">
+          <p className="text-lg text-slate-500 leading-relaxed font-light mb-16 max-w-lg">
             MR Corrugators is a premier manufacturer in Siliguri. Our founder 
-            envisioned a company that bridged the gap between <span className="font-semibold text-blue-900">high-quality manufacturing</span> and 
-            affordable pricing by eliminating middlemen entirely.
+            envisioned a company that bridged the gap between <span className="text-slate-900 font-normal">high-quality manufacturing</span> and 
+            affordable pricing.
           </p>
           
-          {/* Stats Bar */}
-          <div className="flex flex-wrap gap-12 pt-10 border-t border-gray-100">
-            <div className="space-y-1">
-              <p className="text-4xl font-black text-blue-900 tracking-tighter">
+          {/* Stats Bar - Minimalist Grid */}
+          <div className="grid grid-cols-2 gap-12 pt-12 border-t border-slate-100">
+            <div className="space-y-2">
+              <p className="text-3xl font-light text-slate-900 tracking-tight">
                 <Counter end={500} suffix="+" />
               </p>
-              <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">
-                Clients Nationwide
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em]">
+                Clients
               </p>
             </div>
-            <div className="space-y-1">
-              <p className="text-4xl font-black text-blue-900 tracking-tighter">
+            <div className="space-y-2">
+              <p className="text-3xl font-light text-slate-900 tracking-tight">
                 <Counter end={1000} suffix="k+" />
               </p>
-              <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em]">
                 Boxes Produced
               </p>
             </div>
