@@ -1,21 +1,19 @@
 import Hero from '../sections/home/Hero';
-import About from '../sections/home/About';
-import MissionVision from '../sections/home/MissionVision';
 import LogoSlider from '../sections/home/LogoSlider';
-import "../index.css"
-import FeaturedProducts from '../sections/home/FeaturedProducts';
+import ProductList from '../sections/products/ProductList';
 import Testimonials from '../sections/home/Testimonials';
-import ContactCTA from '../sections/home/ContactCTA';
+import FAQ from '../sections/home/FAQ';
+import FeaturedProducts from '../sections/home/FeaturedProducts';
 
 const Home = () => (
   <>
     <Hero />
     <LogoSlider />
-    <About />
     <FeaturedProducts />
-    <ContactCTA />
-    <MissionVision />
+    <ProductList />
     <Testimonials />
+    <FAQ />
   </>
 );
+
 export default Home;
