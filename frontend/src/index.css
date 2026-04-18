@@ -1,38 +1,66 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-blue: #3b82f6;
-  --color-industrial-slate: #0f172a;
-  
-  /* Custom Animations */
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-  }
-  @keyframes loop-scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+  /* 🔵 PRIMARY (Professional Blue) */
+  --color-primary-blue: #0B5ED7;
+  --color-primary-blue-dark: #084298;
+
+  /* 🟡 ACCENT (Yellow - for call-to-actions) */
+  --color-accent-yellow: #fbd769;
+  --color-accent-yellow-dark: #f9cb35;
+
+  /* ⚪ LIGHT BASE COLORS */
+  --color-surface: #ffffff;
+  --color-surface-soft: #f8fafc;
+  --color-bg-main: #ffffff;
+
+  /* ⚫ TEXT (High Contrast) */
+  --color-text-primary: #0f172a;
+  --color-text-muted: #64748b;
+
+  /* BORDER */
+  --color-border: #e2e8f0;
+
+  /* ✨ Animations */
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
   }
 }
 
-/* Layer Base for Global Styles */
 @layer base {
   body {
-    @apply bg-white text-slate-900 font-sans antialiased overflow-x-hidden;
+    /* Pure white background for a clean manufacturing/corporate look */
+    @apply bg-[var(--color-bg-main)] text-[var(--color-text-primary)] font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    /* Darker blue/slate for headings to ensure they pop on white */
+    @apply text-slate-900 font-bold tracking-tight;
   }
 }
 
-/* Custom Component Classes */
 @layer components {
-  .glass-nav {
-    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-2xl;
+  /* 🧊 Light Theme Cards */
+  .card {
+    @apply bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl p-6 
+           shadow-sm transition-all duration-300;
   }
 
+  .card:hover {
+    @apply shadow-xl shadow-slate-200/50 -translate-y-1 border-blue-200;
+  }
+
+  /* 🔵 Primary Button */
   .btn-pill {
-    @apply flex items-center gap-3 px-8 py-4 rounded-full font-bold uppercase tracking-widest transition-all duration-500 hover:scale-105 active:scale-95;
+    @apply flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold uppercase tracking-widest
+           transition-all duration-300 bg-[var(--color-primary-blue)] text-white shadow-md
+           hover:bg-[var(--color-primary-blue-dark)] hover:shadow-blue-200 hover:scale-[1.02];
   }
 
-  .animate-loop-scroll {
-    @apply flex w-[200%] animate-[loop-scroll_30s_linear_infinite];
+  /* 🟡 Accent Button */
+  .btn-accent {
+    @apply flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold uppercase tracking-widest
+           transition-all duration-300 bg-[var(--color-accent-yellow)] text-slate-900 shadow-md
+           hover:bg-[var(--color-accent-yellow-dark)] hover:scale-[1.02];
   }
 }

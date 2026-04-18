@@ -5,70 +5,98 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-blue-950 text-white pt-24 pb-12">
+    <footer className="bg-[#f8fafc] border-t border-slate-200 pt-24 pb-12">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 mb-20">
           
-          {/* Logo & Bio - 4 Columns */}
-          <div className="md:col-span-4">
-            <Link to="/" className="inline-block mb-8 group">
-              {/* Logo replacing the MR Corrugators text */}
+          {/* Brand Column - Authority & Clarity */}
+          <div className="md:col-span-4 space-y-8">
+            <Link to="/" className="inline-block transition-transform hover:scale-105">
               <img 
-                src="/logo.png" 
+                src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Logo%20with%20BG.png?updatedAt=1776526210039" 
                 alt="MR Corrugators" 
-                className="h-10 w-auto brightness-0 invert" // Ensures logo is white on dark bg
+                className="h-14 w-auto" 
               />
             </Link>
-            <p className="text-xl text-blue-100/70 font-normal leading-relaxed max-w-sm">
-              Leading the manufacturing industry in Siliguri with precision-engineered corrugated solutions since 2019.
+            <p className="text-slate-600 text-[16px] leading-relaxed max-w-sm font-medium">
+              Precision-engineered corrugated solutions for global logistics. Committed to 
+              <span className="text-slate-900 font-bold"> zero-defect manufacturing</span> and sustainability since 2019.
             </p>
           </div>
 
-          {/* Navigation - 2 Columns */}
+          {/* Quick Links - Clean Navigation */}
           <div className="md:col-span-2">
-            <h4 className="text-[11px] font-bold uppercase tracking-[0.3em] text-blue-400 mb-8">Company</h4>
-            <ul className="space-y-4 text-[15px] font-medium">
-              <li><Link to="/" className="text-white hover:text-blue-400 transition-colors">Home</Link></li>
-              <li><Link to="/about" className="text-white hover:text-blue-400 transition-colors">About Us</Link></li>
-              <li><Link to="/products" className="text-white hover:text-blue-400 transition-colors">Products</Link></li>
-              <li><Link to="/contact" className="text-white hover:text-blue-400 transition-colors">Contact</Link></li>
+            <div className="flex items-center gap-3 mb-8">
+              <span className="h-[1.5px] w-6 bg-[#FFC107]"></span>
+              <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Company</h4>
+            </div>
+            <ul className="space-y-4">
+              {['Home', 'About', 'Products', 'Contact'].map((item) => (
+                <li key={item}>
+                  <Link 
+                    to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} 
+                    className="group flex items-center text-slate-600 hover:text-[#0B5ED7] font-bold text-[15px] transition-all"
+                  >
+                    <span className="w-0 h-[2px] bg-[#FFC107] transition-all group-hover:w-3 mr-0 group-hover:mr-2 rounded-full"></span>
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Contact Details - 6 Columns */}
+          {/* Contact Details - High Impact Contrast */}
           <div className="md:col-span-6 lg:pl-12">
-            <h4 className="text-[11px] font-bold uppercase tracking-[0.3em] text-blue-400 mb-8">Connect</h4>
+            <div className="flex items-center gap-3 mb-8">
+              <span className="h-[1.5px] w-6 bg-[#FFC107]"></span>
+              <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Connect</h4>
+            </div>
             
-            {/* Using items-start and equal space-y to fix alignment */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10 items-start">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
               <div className="space-y-2">
-                <p className="text-[10px] uppercase text-blue-300/50 font-bold tracking-widest">Phone</p>
-                <p className="text-2xl font-bold text-white tracking-tight leading-none">+91 62944 50747</p>
+                <p className="text-[10px] font-black text-[#0B5ED7] uppercase tracking-widest">Support Line</p>
+                <a 
+                  href="tel:+916294450747" 
+                  className="block text-2xl font-black text-slate-900 hover:bg-[#FFC107] px-1 transition-all w-fit"
+                >
+                  +91 62944 50747
+                </a>
               </div>
-              
+
               <div className="space-y-2">
-                <p className="text-[10px] uppercase text-blue-300/50 font-bold tracking-widest">Email</p>
-                <p className="text-2xl font-bold text-white tracking-tight leading-none lowercase">mrcorrugators@gmail.com</p>
+                <p className="text-[10px] font-black text-[#0B5ED7] uppercase tracking-widest">Official Email</p>
+                <a 
+                  href="mailto:mrcorrugators@gmail.com" 
+                  className="block text-xl font-black text-slate-900 border-b-2 border-[#FFC107] hover:bg-[#FFC107] transition-all w-fit"
+                >
+                  mrcorrugators@gmail.com
+                </a>
               </div>
-              
-              <div className="sm:col-span-2 space-y-2">
-                <p className="text-[10px] uppercase text-blue-300/50 font-bold tracking-widest">Factory Headquarters</p>
-                <p className="text-xl font-medium text-blue-100 leading-snug max-w-md">
-                  Bholanath Para, Eastern Bypass Road, Siliguri, West Bengal
+
+              <div className="sm:col-span-2 space-y-2 pt-4">
+                <p className="text-[10px] font-black text-[#0B5ED7] uppercase tracking-widest">Factory Headquarters</p>
+                <p className="text-[17px] font-bold text-slate-800 leading-snug">
+                  Bholanath Para, Eastern Bypass Road,<br />
+                  Siliguri, West Bengal
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Copyright Bar */}
-        <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-xs font-medium text-blue-200/50 tracking-wide">
-            © {currentYear} MR Corrugators. All rights reserved.
+        {/* Bottom Bar - Clean & Muted */}
+        <div className="pt-10 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">
+            © {currentYear} <span className="text-slate-900">MR Corrugators</span>. All rights reserved.
           </p>
-          <div className="flex items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-blue-200/50">
-            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+          
+          <div className="flex items-center gap-8">
+            <Link to="/privacy" className="text-[10px] font-black text-slate-400 hover:text-slate-900 uppercase tracking-widest transition-colors">
+              Privacy Policy
+            </Link>
+            <Link to="/terms" className="text-[10px] font-black text-slate-400 hover:text-slate-900 uppercase tracking-widest transition-colors">
+              Terms of Service
+            </Link>
           </div>
         </div>
       </div>

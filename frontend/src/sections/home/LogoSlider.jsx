@@ -1,4 +1,5 @@
 import React from 'react';
+import './logo-slider.css';
 
 const LogoSlider = () => {
   const brands = [
@@ -13,56 +14,23 @@ const LogoSlider = () => {
   const duplicatedBrands = [...brands, ...brands];
 
   return (
-    <div className="py-24 bg-white overflow-hidden">
-      {/* Label with "Little Big" Font - Using tracking for a premium feel */}
-      <div className="container mx-auto px-6 mb-16">
-        <h2 className="text-center text-sm md:text-base font-bold uppercase tracking-[0.4em] text-slate-400">
-          Selected Partners
-        </h2>
+    <div className="logo-slider-section">
+      
+      <div className="logo-slider-label">
+        Selected Partners
       </div>
 
-      {/* Infinite Scroll Container */}
-      <div className="relative flex overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_20%,_black_80%,transparent_100%)]">
+      <div className="logo-slider-wrapper">
         
-        {/* Set 1 */}
-        <div className="flex whitespace-nowrap animate-loop-scroll">
+        <div className="logo-track">
           {duplicatedBrands.map((brand, i) => (
-            <div 
-              key={`set1-${i}`} 
-              className="flex items-center justify-center px-16 transition-all duration-300 group"
-            >
-              {/* Logo Image */}
-              <img 
-                src={brand.src} 
-                alt={brand.name} 
-                className="h-12 w-auto object-contain grayscale opacity-30 group-hover:grayscale-0 group-hover:opacity-100 transition-all"
-              />
-              {/* Optional: Minimal Text Label (Only if needed) */}
-              <span className="ml-4 text-lg font-semibold tracking-tight text-slate-900 opacity-0 group-hover:opacity-100 transition-opacity">
-                {brand.name}
-              </span>
+            <div className="logo-item" key={i}>
+              <img src={brand.src} alt={brand.name} />
+              <span>{brand.name}</span>
             </div>
           ))}
         </div>
 
-        {/* Set 2 (Aria-hidden for accessibility/SEO) */}
-        <div className="flex whitespace-nowrap animate-loop-scroll" aria-hidden="true">
-          {duplicatedBrands.map((brand, i) => (
-            <div 
-              key={`set2-${i}`} 
-              className="flex items-center justify-center px-16 group"
-            >
-              <img 
-                src={brand.src} 
-                alt={brand.name} 
-                className="h-12 w-auto object-contain grayscale opacity-30 group-hover:grayscale-0 group-hover:opacity-100 transition-all"
-              />
-              <span className="ml-4 text-lg font-semibold tracking-tight text-slate-900 opacity-0 group-hover:opacity-100 transition-opacity">
-                {brand.name}
-              </span>
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   );

@@ -1,18 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-
-  // Handle scroll effect for a more "pro" feel
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -22,43 +14,55 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'pt-4' : 'pt-6'}`}>
+    <nav className="fixed top-5 left-0 w-full z-[100] pt-2">
       <div className="container mx-auto max-w-6xl px-6">
-        <div className={`relative flex justify-between items-center px-8 py-3 transition-all duration-500 border border-white/20 
-          ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-lg rounded-2xl' : 'bg-white/40 backdrop-blur-sm rounded-full'}`}>
+        
+        {/* Main Navbar Container - Locked Glass Style */}
+        <div className="relative flex justify-between items-center px-8 py-3 border border-white/20 bg-white/80 backdrop-blur-md shadow-lg rounded-full transition-all duration-300">
           
           {/* Logo */}
           <Link to="/" className="relative z-10 flex items-center gap-2 group">
-            <img src="/logo.png" alt="Logo" className="h-7 w-auto group-hover:rotate-[-5deg] transition-transform duration-300" />
-            <span className="font-black tracking-tighter text-slate-900 text-xl">MR.</span>
+            <img 
+              src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Logo%20with%20BG.png?updatedAt=1776526210039" 
+              alt="Logo" 
+              className="h-14 w-auto md:h-16 transition-transform group-hover:scale-105" 
+            />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Desktop Nav */}
+          <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
+
               return (
                 <Link 
                   key={link.name} 
                   to={link.path} 
-                  className="relative text-[11px] font-bold uppercase tracking-[0.2em] text-slate-600 hover:text-slate-900 transition-colors"
+                  // Increased text size from 11px to 14px and adjusted spacing
+                  className="relative text-[14px] font-bold uppercase tracking-wider transition-colors duration-300"
+                  style={{ color: isActive ? '#0B5ED7' : '#475569' }}
                 >
-                  {link.name}
+                  <span className="hover:text-[#0B5ED7]">
+                    {link.name}
+                  </span>
+
                   {isActive && (
                     <motion.div 
                       layoutId="nav-underline"
-                      className="absolute -bottom-1 left-0 right-0 h-[2px] bg-blue-600 rounded-full"
+                      className="absolute -bottom-1.5 left-0 right-0 h-[3px] bg-[var(--color-accent-yellow, #FFD700)] rounded-full"
                     />
                   )}
                 </Link>
               );
             })}
             
-            {/* Improved Premium Button */}
-            <Link to="/contact" className="group relative overflow-hidden bg-slate-900 text-white px-7 py-2.5 rounded-full text-[11px] font-bold uppercase tracking-widest transition-all hover:pr-9 hover:bg-blue-600 active:scale-95">
+            {/* CTA */}
+            <Link 
+              to="/contact" 
+              className="group relative overflow-hidden bg-[#0B5ED7] text-white px-8 py-3 rounded-xl text-[13px] font-extrabold uppercase tracking-widest transition-all hover:bg-[#FFD700] hover:text-black active:scale-95 shadow-md hover:shadow-lg"
+            >
               <span className="relative z-10">Start Project</span>
-              <span className="absolute right-4 opacity-0 group-hover:opacity-100 group-hover:right-3 transition-all duration-300">→</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
             </Link>
           </div>
 
@@ -77,36 +81,42 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div 
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden absolute top-[calc(100%-10px)] left-6 right-6 overflow-hidden bg-white/95 backdrop-blur-xl rounded-3xl border border-slate-200 shadow-2xl"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="md:hidden absolute top-[calc(100%-10px)] left-6 right-6 overflow-hidden bg-white/95 backdrop-blur-2xl rounded-3xl border border-slate-200 shadow-2xl"
           >
             <div className="flex flex-col p-8 gap-6">
               {navLinks.map((link, idx) => (
                 <motion.div
                   key={link.name}
-                  initial={{ x: -20, opacity: 0 }}
+                  initial={{ x: -10, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: idx * 0.1 }}
+                  transition={{ delay: idx * 0.05 }}
                 >
                   <Link 
                     onClick={() => setIsOpen(false)} 
                     to={link.path} 
-                    className="text-2xl font-semibold text-slate-900 hover:text-blue-600 transition-colors"
+                    className={`text-xl font-bold transition-colors ${
+                      location.pathname === link.path
+                        ? 'text-[#0B5ED7]'
+                        : 'text-slate-800'
+                    }`}
                   >
                     {link.name}
                   </Link>
                 </motion.div>
               ))}
+
               <hr className="border-slate-100" />
+
               <Link 
                 to="/contact" 
-                className="w-full bg-slate-900 text-white py-4 rounded-2xl text-center font-bold uppercase tracking-widest"
+                className="w-full bg-[#0B5ED7] text-white py-4 rounded-2xl text-center font-bold uppercase tracking-widest active:scale-95 transition-all"
                 onClick={() => setIsOpen(false)}
               >
                 Start Project

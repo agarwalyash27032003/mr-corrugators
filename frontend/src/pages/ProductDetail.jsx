@@ -14,8 +14,8 @@ const ProductDetail = () => {
   if (!product) {
     return (
       <div className="py-24 text-center bg-white min-h-screen flex flex-col justify-center px-6">
-        <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tighter">Not Found.</h2>
-        <Link to="/products" className="inline-block mx-auto bg-blue-600 text-white px-8 py-3 rounded-full font-bold">
+        <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tighter uppercase">Not Found.</h2>
+        <Link to="/products" className="inline-flex mx-auto bg-slate-900 text-white px-10 py-4 rounded-full font-black uppercase tracking-widest text-[11px] shadow-lg">
           Return to Catalog
         </Link>
       </div>
@@ -23,116 +23,118 @@ const ProductDetail = () => {
   }
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-white min-h-screen">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-white min-h-screen pt-16">
       
-      {/* Minimal Breadcrumb */}
-<div className="bg-white border-b border-slate-100 py-4 mt-[70px] md:mt-[80px]"> 
-  {/* mt-[70px] ensures it starts BELOW the fixed navbar on mobile */}
-  <div className="container mx-auto px-5 max-w-7xl">
-    <Link to="/products" className="group text-[9px] font-bold text-slate-400 tracking-[0.3em] flex items-center gap-2">
-      <span>←</span> BACK TO SOLUTIONS
-    </Link>
-  </div>
-</div>
+      {/* Minimal Breadcrumb - Standardized */}
+      <div className="bg-white border-b border-slate-100 py-6 mt-[70px] md:mt-[80px]"> 
+        <div className="container mx-auto px-5 max-w-7xl">
+          <Link to="/products" className="group text-[10px] font-black text-slate-400 tracking-[0.3em] flex items-center gap-3 hover:text-[#0B5ED7] transition-colors">
+            <span className="text-[#FFC107]">←</span> BACK TO SOLUTIONS
+          </Link>
+        </div>
+      </div>
 
-      <div className="container mx-auto px-5 py-10 md:py-20 max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-10 md:gap-24 items-start">
+      <div className="container mx-auto px-5 py-10 md:py-24 max-w-7xl">
+        <div className="grid lg:grid-cols-2 gap-12 md:gap-24 items-start">
           
-          {/* Image Showcase - Removed 'sticky' for mobile to prevent scrolling issues */}
+          {/* Image Showcase */}
           <motion.div 
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="lg:sticky lg:top-32 rounded-2xl md:rounded-3xl overflow-hidden bg-slate-50 border border-slate-100"
+            className="lg:sticky lg:top-32 rounded-3xl overflow-hidden bg-slate-50 border border-slate-200 shadow-sm"
           >
             <img src={product.image} alt={product.name} className="w-full h-auto aspect-[4/5] object-cover" />
           </motion.div>
 
           {/* Structured Content */}
-          <div className="lg:pt-6">
-            <header className="mb-8 md:mb-12">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="h-[1px] w-6 bg-blue-600"></div>
-                <span className="text-blue-600 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.3em]">{product.category}</span>
+          <div className="lg:pt-4">
+            <header className="mb-10 md:mb-16">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-[2px] w-8 bg-[#FFC107]"></div>
+                <span className="text-[#0B5ED7] text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em]">{product.category}</span>
               </div>
-              <h1 className="text-4xl md:text-7xl font-bold text-slate-900 tracking-tighter leading-tight mb-6">
+              <h1 className="text-4xl md:text-[5rem] font-black text-slate-900 tracking-tighter leading-[1.0] mb-8 uppercase">
                 {product.name}
               </h1>
-              <p className="text-lg md:text-xl text-slate-500 font-normal leading-relaxed">
+              <p className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed">
                 {product.description}
               </p>
             </header>
 
-            {/* Technical Specs - Compact for Mobile */}
-            <div className="mb-10 md:mb-16">
-              <div className="flex items-center justify-between mb-6 pb-3 border-b border-slate-100">
-                <h3 className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.3em] text-slate-900">Specs</h3>
-                <span className="text-[9px] text-slate-400 font-medium tracking-widest">2026 REV</span>
+            {/* Technical Specs - Industrial Grid */}
+            <div className="mb-12 md:mb-20">
+              <div className="flex items-center justify-between mb-8 pb-4 border-b-2 border-slate-900">
+                <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-slate-900">Technical Specifications</h3>
               </div>
               
-              <div className="grid grid-cols-1 gap-y-0.5">
+              <div className="grid grid-cols-1 gap-y-2">
                 {product.features.map((feature, index) => (
-                  <div key={index} className="flex items-center justify-between py-4 px-2 rounded-lg border-b border-slate-50 last:border-0">
-                    <div className="flex items-center gap-3">
-                      <div className="w-1 h-1 rounded-full bg-blue-600"></div>
-                      <span className="text-base md:text-lg text-slate-700 font-medium tracking-tight">{feature}</span>
+                  <div key={index} className="flex items-center justify-between py-5 px-4 rounded-xl border border-slate-100 bg-slate-50/50 group hover:border-[#FFC107] transition-all">
+                    <div className="flex items-center gap-4">
+                      <div className="w-2 h-2 rounded-full bg-[#0B5ED7]"></div>
+                      <span className="text-base md:text-[18px] text-slate-800 font-bold tracking-tight uppercase">{feature}</span>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Action Bar - Mobile Optimized Stacking */}
-            <div className="flex flex-col sm:flex-row items-center gap-6 p-6 md:p-8 rounded-2xl md:rounded-3xl bg-slate-950 text-white">
-              <Link to="/contact" className="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-base md:text-lg text-center whitespace-nowrap">
-                Request Quote
+            {/* Action Bar - Industrial Blue/Black Contrast */}
+            <div className="flex flex-col sm:flex-row items-center gap-8 p-8 md:p-10 rounded-[2rem] bg-slate-900 text-white shadow-2xl shadow-slate-200">
+              <Link to="/contact" className="w-full sm:w-auto bg-[#0B5ED7] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest text-[12px] text-center whitespace-nowrap hover:bg-white hover:text-slate-900 transition-all active:scale-95 shadow-lg">
+                Request a Quote
               </Link>
               <div className="text-center sm:text-left">
-                <p className="text-[9px] font-bold text-blue-400 uppercase tracking-widest mb-1">Status: Active</p>
-                <p className="text-xs text-slate-400 font-medium tracking-tight">Fulfillment: 3–5 Days</p>
+                <p className="text-[10px] font-black text-[#FFC107] uppercase tracking-[0.2em] mb-1">Status: Operational</p>
+                <p className="text-xs text-slate-400 font-bold tracking-tight uppercase">Avg Lead: 3–5 Business Days</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Custom Engineering - Responsive Padding & Layout */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* Bespoke Engineering Section */}
+      <section className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-5 max-w-7xl">
-          <div className="relative overflow-hidden bg-slate-50 rounded-3xl md:rounded-[2.5rem] border border-slate-100">
-            <div className="relative z-10 p-8 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-10">
+          <div className="relative overflow-hidden bg-slate-50 rounded-[2.5rem] border border-slate-200">
+            <div className="relative z-10 p-10 md:p-24 flex flex-col lg:flex-row items-center justify-between gap-12">
               <div className="max-w-2xl text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
-                  <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                  <span className="text-blue-600 text-[10px] font-bold uppercase tracking-[0.4em]">Bespoke</span>
+                <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
+                  <span className="h-[2px] w-8 bg-[#FFC107]"></span>
+                  <span className="text-[#0B5ED7] text-[10px] font-black uppercase tracking-[0.4em]">Bespoke Production</span>
                 </div>
-                <h4 className="text-3xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tighter">
-                  Custom <span className="text-slate-300 font-medium">Engineering.</span>
+                <h4 className="text-4xl md:text-[4.5rem] font-black text-slate-900 mb-8 tracking-tighter leading-none">
+                  Custom <span className="text-[#FFC107]">Engineering.</span>
                 </h4>
-                <p className="text-base md:text-xl text-slate-500 font-normal leading-relaxed">
-                  Specialized custom-branded industrial solutions tailored to your unique logistics requirements.
+                <p className="text-base md:text-xl text-slate-500 font-medium leading-relaxed">
+                  Specialized custom-branded industrial solutions tailored to your unique logistics requirements and structural standards.
                 </p>
               </div>
               
-              <Link to="/contact" className="w-full lg:w-auto bg-slate-900 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] text-center shadow-lg">
-                Consult Expert
+              <Link to="/contact" className="w-full lg:w-auto bg-slate-900 text-white px-12 py-5 rounded-full font-black uppercase tracking-widest text-[12px] text-center shadow-xl hover:bg-[#0B5ED7] transition-all">
+                Consult Engineering Expert
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Related Products - Grid columns adjusted */}
-      <section className="py-20 md:py-32 bg-white">
+      {/* Related Solutions */}
+      <section className="py-20 md:py-32 bg-white border-t border-slate-100">
         <div className="container mx-auto px-5 max-w-7xl">
-          <h2 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.5em] mb-12 text-center md:text-left">Related Solutions</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+          <div className="flex items-center gap-3 mb-16">
+            <span className="h-[2px] w-8 bg-[#FFC107]"></span>
+            <h2 className="text-[11px] font-black text-slate-900 uppercase tracking-[0.4em]">Related Solutions</h2>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-16">
             {relatedProducts.map((p) => (
               <Link to={`/product/${p.id}`} key={p.id} className="group">
-                <div className="aspect-square rounded-xl md:rounded-2xl overflow-hidden bg-slate-50 mb-6 border border-slate-100">
-                  <img src={p.image} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="aspect-square rounded-2xl overflow-hidden bg-slate-50 mb-8 border border-slate-200 shadow-sm group-hover:shadow-xl transition-all duration-500">
+                  <img src={p.image} alt={p.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
                 </div>
-                <h5 className="text-xl font-bold text-slate-900 tracking-tighter mb-1 uppercase leading-none">{p.name}</h5>
-                <p className="text-[9px] font-bold text-blue-500 uppercase tracking-widest">{p.category}</p>
+                <h5 className="text-2xl font-black text-slate-900 tracking-tighter mb-2 uppercase leading-none group-hover:text-[#0B5ED7] transition-colors">{p.name}</h5>
+                <p className="text-[10px] font-black text-[#FFC107] uppercase tracking-widest">{p.category}</p>
               </Link>
             ))}
           </div>

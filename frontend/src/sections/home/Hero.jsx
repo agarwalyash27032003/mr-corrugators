@@ -3,46 +3,106 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Hero = () => (
-  <section className="relative h-screen flex items-center overflow-hidden bg-industrial-slate">
-    {/* Background Image with Vibrant Overlay */}
+  <section className="relative h-screen flex items-center overflow-hidden bg-slate-950">
+
+    {/* Background */}
     <div className="absolute inset-0">
-      <img 
-        src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2000" 
-        className="w-full h-full object-cover opacity-60 scale-105 animate-slow-zoom"
+      
+      {/* Animated Image */}
+      <motion.img 
+        src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2000"
+        className="w-full h-full object-cover"
         alt="Industrial Factory"
+        initial={{ scale: 1.05 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 6, ease: "easeOut" }}
       />
-      <div className="absolute inset-0 bg-gradient-to-tr from-industrial-slate via-transparent to-blue-500/20"></div>
+
+      {/* Dark cinematic overlay */}
+      <div className="absolute inset-0 bg-slate-950/60"></div>
+
+      {/* Soft left gradient for content readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent lg:w-[65%]"></div>
+
+      {/* Subtle grain */}
+      <div
+        className="absolute inset-0 opacity-[0.04] mix-blend-overlay pointer-events-none"
+        style={{
+          backgroundImage:
+            "url('https://www.transparenttextures.com/patterns/noise.png')",
+        }}
+      />
     </div>
 
-    <div className="container mx-auto px-6 relative z-10 pt-20">
+    {/* Content */}
+    <div className="container mx-auto px-6 relative z-10">
       <motion.div 
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-4xl"
+        className="max-w-3xl"
       >
-        <span className="text-blue-400 font-black uppercase tracking-[0.5em] text-xs mb-6 block">
-          Since 2019 • Premier Manufacturing
-        </span>
-        <h1 className="text-6xl md:text-[6rem] font-bold text-white leading-[0.9] tracking-tighter mb-10">
-          Precision <br/> <span className="text-blue-500">Packaging</span> <br/> for Global Brands.
+        
+        {/* Label */}
+        <div className="flex items-center gap-3 mb-6">
+          <span className="h-[2px] w-8 bg-[#FFC107]"></span>
+          <span className="text-[#FFC107] font-bold uppercase tracking-[0.25em] text-[11px]">
+            Since 2019 • Manufacturing Excellence
+          </span>
+        </div>
+
+        {/* Headline */}
+        <h1 className="text-5xl md:text-[4.8rem] font-black text-white leading-[0.95] tracking-tighter mb-8">
+          Precision <br/>
+          <span className="text-[#FFC107]">Packaging</span>{" "}
+          <span className="relative inline-block">
+            Solutions.
+            <div className="absolute bottom-1 left-0 w-full h-2 bg-[#FFC107] -z-10 shadow-[0_2px_10px_rgba(255,193,7,0.25)]"></div>
+          </span>
         </h1>
 
-        <div className="flex flex-wrap gap-6 items-center">
-          <Link to="/products" className="btn-pill bg-blue-500 text-white shadow-[0_0_30px_rgba(59,130,246,0.5)]">
+        {/* Description */}
+        <p className="text-[18px] text-slate-300 font-medium mb-12 max-w-lg leading-relaxed">
+          High-performance corrugated engineering for global supply chains. 
+          Built for <span className="text-white font-bold">durability</span> and scale.
+        </p>
+
+        {/* CTA */}
+        <div className="flex flex-wrap gap-5 items-center">
+          
+          {/* Primary */}
+          <Link 
+            to="/products" 
+            className="px-8 py-4 bg-[#FFC107] text-slate-900 rounded-full font-bold uppercase tracking-widest text-[12px] shadow-lg shadow-yellow-500/10 hover:bg-[#EAB308] active:scale-95 transition-all hover:-translate-y-0.5 flex items-center gap-3"
+          >
             Explore Products
-            <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">→</div>
+            <span className="font-black">→</span>
           </Link>
-          <div className="hidden md:flex gap-10 ml-8 border-l border-white/20 pl-10">
+
+          {/* Secondary */}
+          <Link 
+            to="/contact" 
+            className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold uppercase tracking-widest text-[12px] hover:border-[#FFC107] hover:text-[#FFC107] transition-all"
+          >
+            Get a Quote
+          </Link>
+
+          {/* Stats */}
+          <div className="hidden lg:flex gap-10 ml-6 border-l border-white/20 pl-10">
             <div>
-              <p className="text-2xl font-bold text-white">500+</p>
-              <p className="text-[10px] text-blue-300 uppercase tracking-widest">Global Clients</p>
+              <p className="text-2xl font-black text-[#FFC107]">500+</p>
+              <p className="text-[10px] text-slate-400 font-bold uppercase tracking-[0.1em]">
+                Global Shipments
+              </p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-white">24/7</p>
-              <p className="text-[10px] text-blue-300 uppercase tracking-widest">Support</p>
+              <p className="text-2xl font-black text-[#FFC107]">24/7</p>
+              <p className="text-[10px] text-slate-400 font-bold uppercase tracking-[0.1em]">
+                Production Support
+              </p>
             </div>
           </div>
+
         </div>
       </motion.div>
     </div>
