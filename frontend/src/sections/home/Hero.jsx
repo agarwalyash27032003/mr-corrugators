@@ -22,7 +22,7 @@ const Hero = () => (
       <div className="absolute inset-0 bg-slate-950/60"></div>
 
       {/* Soft left gradient for content readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent lg:w-[65%]"></div>
+      <div className="absolute inset-0"></div>
 
       {/* Subtle grain */}
       <div

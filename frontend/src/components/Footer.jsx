@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 mb-20">
           
-          {/* Brand Column - Authority & Clarity */}
+          {/* Brand Column */}
           <div className="md:col-span-4 space-y-8">
             <Link to="/" className="inline-block transition-transform hover:scale-105">
               <img 
@@ -24,7 +24,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links - Clean Navigation */}
+          {/* Quick Links */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-8">
               <span className="h-[1.5px] w-6 bg-[#FFC107]"></span>
@@ -45,7 +45,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Details - High Impact Contrast */}
+          {/* Contact Details */}
           <div className="md:col-span-6 lg:pl-12">
             <div className="flex items-center gap-3 mb-8">
               <span className="h-[1.5px] w-6 bg-[#FFC107]"></span>
@@ -84,19 +84,41 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar - Clean & Muted */}
-        <div className="pt-10 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">
-            © {currentYear} <span className="text-slate-900">MR Corrugators</span>. All rights reserved.
-          </p>
-          
-          <div className="flex items-center gap-8">
-            <Link to="/privacy" className="text-[10px] font-black text-slate-400 hover:text-slate-900 uppercase tracking-widest transition-colors">
-              Privacy Policy
-            </Link>
-            <Link to="/terms" className="text-[10px] font-black text-slate-400 hover:text-slate-900 uppercase tracking-widest transition-colors">
-              Terms of Service
-            </Link>
+        {/* Bottom Bar - Redesigned for Center Credit */}
+        <div className="pt-10 border-t border-slate-200">
+          <div className="flex flex-col items-center text-center space-y-6">
+            
+            
+
+            {/* Copyright and Legal Links */}
+            <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6">
+              <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">
+                © {currentYear} <span className="text-slate-900">MR Corrugators</span>. All rights reserved.
+              </p>
+              
+              <div className="flex items-center gap-8">
+                <Link to="/privacy" className="text-[10px] font-black text-slate-400 hover:text-slate-900 uppercase tracking-widest transition-colors">
+                  Privacy Policy
+                </Link>
+                <Link to="/terms" className="text-[10px] font-black text-slate-400 hover:text-slate-900 uppercase tracking-widest transition-colors">
+                  Terms of Service
+                </Link>
+              </div>
+            </div>
+
+            {/* Managed By - Center & Larger */}
+            <p className="text-[12px] font-black text-slate-500 uppercase tracking-[0.25em]">
+              Developed and managed by{' '}
+              <a 
+                href="https://bluepeakstudio.in" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#0B5ED7] hover:bg-[#FFC107] px-1 transition-colors"
+              >
+                BluePeak Studio
+              </a>
+            </p>
+
           </div>
         </div>
       </div>
