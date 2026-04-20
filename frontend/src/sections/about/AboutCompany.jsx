@@ -15,7 +15,7 @@ const AboutCompany = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         
         {/* Section 01 - Header Content */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-24 mb-32">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-24 mb-24">
           <div className="lg:w-1/2">
             <div className="flex items-center gap-3 mb-8">
               <span className="h-[2px] w-8 bg-[#FFC107]"></span>
@@ -30,12 +30,25 @@ const AboutCompany = () => {
             </h2>
           </div>
 
+          {/* 4 Paragraph Content Block */}
           <div className="lg:w-1/2 lg:pt-16">
-            <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-8">
-              MR Corrugators is a solutions-driven enterprise engineered to support the scale of growing companies. We don't just manufacture boxes; we manage the responsibility of protecting your business reputation.
-            </p>
+            <div className="space-y-8">
+              <p className="text-lg md:text-xl text-slate-900 font-bold leading-snug">
+                MR Corrugators is not just a packaging manufacturer—it is a solutions-driven business built to support growing companies with reliable and efficient packaging.
+              </p>
+              <p className="text-lg md:text-xl text-slate-900 font-bold leading-snug">
+                Since 2018, we have been delivering high-quality corrugated boxes, customized tapes, stretch films, bubble wraps, and packing materials designed to protect, perform, and scale with our clients’ needs.
+              </p>
+              <p className="text-lg md:text-xl text-slate-900 font-bold leading-snug">
+                What sets us apart is our clarity of purpose—understand the requirement, deliver the right solution, and do it consistently. No over-promising, no compromise on quality.
+              </p>
+              <p className="text-lg md:text-xl text-slate-900 font-bold leading-snug">
+                For us, packaging is not just a product—it’s a responsibility towards our clients’ business, their goods, and their reputation.
+              </p>
+              
+            </div>
 
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6 mt-12">
               <div className="w-16 h-[2px] bg-[#FFC107]"></div>
               <p className="text-xs font-black text-slate-900 uppercase tracking-widest">
                 Established 2018 • Siliguri Headquarters
@@ -70,61 +83,39 @@ const AboutCompany = () => {
 
         {/* Section 03 - Core Values Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-slate-200 border border-slate-200 rounded-[2.5rem] overflow-hidden shadow-sm">
-          
-          {/* Item 1 */}
+          {/* Core Values Items (01, 02, 03) remains as before... */}
           <div className="bg-white p-14 hover:bg-slate-50 transition-all group">
             <div className="flex justify-between items-start mb-12">
-              <span className="text-[#0B5ED7] font-black text-[10px] tracking-[0.2em] uppercase">
-                01. Clarity
-              </span>
+              <span className="text-[#0B5ED7] font-black text-[10px] tracking-[0.2em] uppercase">01. Clarity</span>
               <div className="w-8 h-8 rounded-full border border-slate-100 flex items-center justify-center group-hover:bg-[#FFC107] group-hover:border-[#FFC107] transition-all">
                 <span className="text-slate-300 group-hover:text-slate-900">→</span>
               </div>
             </div>
-            <h3 className="text-3xl font-black text-slate-900 tracking-tight mb-6">
-              Requirement <br/>First.
-            </h3>
-            <p className="text-slate-500 leading-relaxed font-medium text-[15px]">
-              Our process is rooted in understanding. We analyze specific logistics requirements to deliver high-performance corrugated solutions that perform under pressure.
-            </p>
+            <h3 className="text-3xl font-black text-slate-900 tracking-tight mb-6">Requirement <br/>First.</h3>
+            <p className="text-slate-500 leading-relaxed font-medium text-[15px]">Our process is rooted in understanding. We analyze specific logistics requirements to deliver high-performance corrugated solutions.</p>
           </div>
 
-          {/* Item 2 */}
           <div className="bg-white p-14 hover:bg-slate-50 transition-all group border-x border-slate-100">
             <div className="flex justify-between items-start mb-12">
-              <span className="text-[#0B5ED7] font-black text-[10px] tracking-[0.2em] uppercase">
-                02. Integrity
-              </span>
+              <span className="text-[#0B5ED7] font-black text-[10px] tracking-[0.2em] uppercase">02. Integrity</span>
               <div className="w-8 h-8 rounded-full border border-slate-100 flex items-center justify-center group-hover:bg-[#FFC107] group-hover:border-[#FFC107] transition-all">
                 <span className="text-slate-300 group-hover:text-slate-900">→</span>
               </div>
             </div>
-            <h3 className="text-3xl font-black text-slate-900 tracking-tight mb-6">
-              No <br/>Compromise.
-            </h3>
-            <p className="text-slate-500 leading-relaxed font-medium text-[15px]">
-              From customized tapes to stretch films, we maintain a zero-compromise policy on material density and structural integrity for every client.
-            </p>
+            <h3 className="text-3xl font-black text-slate-900 tracking-tight mb-6">No <br/>Compromise.</h3>
+            <p className="text-slate-500 leading-relaxed font-medium text-[15px]">From customized tapes to stretch films, we maintain a zero-compromise policy on material density and structural integrity.</p>
           </div>
 
-          {/* Item 3 */}
           <div className="bg-white p-14 hover:bg-slate-50 transition-all group">
             <div className="flex justify-between items-start mb-12">
-              <span className="text-[#0B5ED7] font-black text-[10px] tracking-[0.2em] uppercase">
-                03. Scalability
-              </span>
+              <span className="text-[#0B5ED7] font-black text-[10px] tracking-[0.2em] uppercase">03. Scalability</span>
               <div className="w-8 h-8 rounded-full border border-slate-100 flex items-center justify-center group-hover:bg-[#FFC107] group-hover:border-[#FFC107] transition-all">
                 <span className="text-slate-300 group-hover:text-slate-900">→</span>
               </div>
             </div>
-            <h3 className="text-3xl font-black text-slate-900 tracking-tight mb-6">
-              Designed <br/>To Scale.
-            </h3>
-            <p className="text-slate-500 leading-relaxed font-medium text-[15px]">
-              Our facility is designed to scale production rapidly to match your business growth and delivery timelines without loss in quality.
-            </p>
+            <h3 className="text-3xl font-black text-slate-900 tracking-tight mb-6">Designed <br/>To Scale.</h3>
+            <p className="text-slate-500 leading-relaxed font-medium text-[15px]">Our facility is designed to scale production rapidly to match your business growth and delivery timelines without loss in quality.</p>
           </div>
-
         </div>
       </div>
     </section>

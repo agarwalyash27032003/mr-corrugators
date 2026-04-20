@@ -14,7 +14,7 @@ export const productData = [
     name: "Duplex Box",
     description: "White-coated surface boxes perfect for high-quality multi-color printing and premium retail presentation.",
     features: ["Smooth Finish", "Excellent Printability", "Moisture Resistant"],
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600"
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Duplex%20carton%20box.jpg"
   },
   {
     id: "mono-kraft-box",
@@ -22,7 +22,7 @@ export const productData = [
     name: "Mono Kraft Box",
     description: "Single-layered kraft packaging used for lightweight items, offering a rustic and organic aesthetic.",
     features: ["Lightweight", "Cost-effective", "Bio-degradable"],
-    image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?q=80&w=600"
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20kraft%20box.jpg"
   },
   {
     id: "mono-duplex-box",
@@ -30,7 +30,7 @@ export const productData = [
     name: "Mono Duplex Box",
     description: "Single-layer duplex board packaging commonly used in the pharmaceutical and cosmetic industries.",
     features: ["High Stiffness", "Vibrant Graphics", "Compact Design"],
-    image: "https://images.unsplash.com/photo-1512418490979-92798ccc9340?q=80&w=600"
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20duplex%20box.png"
   },
   {
     id: "corrugated-trays",
@@ -38,16 +38,15 @@ export const productData = [
     name: "Corrugated Trays",
     description: "Open-top trays designed for display purposes or for holding beverage cans and jars securely.",
     features: ["Stackable Design", "High Visibility", "Structural Integrity"],
-    image: "https://images.unsplash.com/photo-1591132807083-30c1807f2b10?q=80&w=600"
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20trays.jpg"
   },
-  // CELLOTAPES
   {
     id: "corrugated-plastic-box",
     category: "Carton Box",
     name: "Corrugated Plastic Box",
     description: "Weather-resistant, reusable plastic corrugated boxes made from polypropylene. Ideal for returnable transit.",
     features: ["Waterproof", "Highly Durable", "Lightweight Plastic"],
-    image: "https://images.unsplash.com/photo-1606164303240-8480370d0370?q=80&w=600"
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corr%20plastic%20trayus.jpg"
   },
   {
     id: "plain-tape",
@@ -55,7 +54,52 @@ export const productData = [
     name: "Plain Tape",
     description: "High-grade adhesive BOPP tapes for general sealing. Available in brown and transparent.",
     features: ["Strong Adhesion", "UV Resistant", "Long Shelf Life"],
-    image: "https://images.unsplash.com/photo-1603912627214-9011de557cbf?q=80&w=600"
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Plain%20tapes.jpg"
+  }
+  ,
+  {
+    id: "printed-tape",
+    category: "CelloTapes",
+    name: "Single / Double Printed Tape",
+    description: "High-grade adhesive BOPP tapes for general sealing. Available in brown and transparent.",
+    features: ["Strong Adhesion", "UV Resistant", "Long Shelf Life"],
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Printed%20tapes.jpg"
+  }
+  ,
+  {
+    id: "colored-tape",
+    category: "CelloTapes",
+    name: "Colored Tape",
+    description: "High-grade adhesive BOPP tapes for general sealing. Available in brown and transparent.",
+    features: ["Strong Adhesion", "UV Resistant", "Long Shelf Life"],
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Colroed%20tapes.jpg"
+  }
+  ,
+  {
+    id: "plain-corrugated-roll",
+    category: "Corrugated Rolls",
+    name: "Plain/printed 2 ply corrugated rolls",
+    description: "High-grade adhesive BOPP tapes for general sealing. Available in brown and transparent.",
+    features: ["Strong Adhesion", "UV Resistant", "Long Shelf Life"],
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20Rolls.jpg"
+  }
+  ,
+  {
+    id: "stretch-films",
+    category: "Stretch films",
+    name: "Stretch films",
+    description: "High-grade adhesive BOPP tapes for general sealing. Available in brown and transparent.",
+    features: [`Available from sizes 3" - 24"`, "Strong Adhesion", "UV Resistant", "Long Shelf Life"],
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/stretch%20films.jpg"
+  }
+  ,
+  {
+    id: "bubble-wrap",
+    category: "Bubble Wraps",
+    name: "Bubble Wraps",
+    description: "High-grade adhesive BOPP tapes for general sealing. Available in brown and transparent.",
+    features: ["1 mt* 100 mt plastic wrap","Weight 3.5-4 kg","Strong Adhesion", "UV Resistant", "Long Shelf Life"],
+    image: "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Bubble%20wraps.png"
   }
 ];
 

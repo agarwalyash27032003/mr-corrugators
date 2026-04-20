@@ -7,10 +7,10 @@ import 'swiper/css/navigation';
 
 const Testimonials = () => {
   const reviews = [
-    { name: "Sheldon Jackson", role: "Project Manager", text: "With MR Corrugators, our logistics now feature durable, enduring designs that showcase true manufacturing excellence. Their commitment to quality is unparalleled in the industry." },
-    { name: "Jasickiya Anthony", role: "Supply Head", text: "They transformed our supply chain with a perfect blend of structural integrity and reliability. A truly elite partner for long-term growth." },
-    { name: "Robert Wilson", role: "Operations Director", text: "The quality and timely delivery have made them our go-to supplier for all industrial packaging." },
-    { name: "Ananya Sharma", role: "Design Lead", text: "Exceptional attention to detail. The finish on their duplex boxes is superior to anything else." }
+    { name: "Manisha Garg", text: "Good Quality Satisfactory delivery of packaging 📦 cartoons. Healthy timely delivery of all products.  Cello tapes very reasonable and qualitative items available at factory premises. Thankyou." },
+    { name: "Renuka Rani Basak",  text: "Very reliable place for the packaging needs, I am happy to work with them,Quality and service is appreciatable" },
+    { name: "Puja Roy", text: "The work ethics here very good. The quality, service is applaudable and I am really happy to choose MR Corrugators as my packaging partner" },
+    { name: "Deepa Agarwal", text: "Impressive services for the clients, customisation of all kinds n sizes of boxes available, furniture packing rolls, air bubble rolls, cellotapes both printed n plain, stretch films plastic wraps ,all available at best competitive prices" }
   ];
 
   return (
@@ -84,9 +84,6 @@ const Testimonials = () => {
                     <h4 className="font-black text-slate-900 text-base tracking-tight leading-none uppercase">
                       {r.name}
                     </h4>
-                    <p className="text-[10px] font-bold text-[#0B5ED7] uppercase tracking-widest mt-2">
-                      {r.role}
-                    </p>
                   </div>
                 </div>
               </div>

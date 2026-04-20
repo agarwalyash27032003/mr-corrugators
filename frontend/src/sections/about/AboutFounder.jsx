@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AboutFounder = () => (
-  <section className="py-24 lg:py-0 lg:h-[85vh] flex items-center bg-white overflow-hidden">
+  <section className="py-24 lg:py-0 flex items-center bg-white overflow-hidden">
     <div className="container mx-auto px-6 max-w-7xl">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
         
@@ -44,10 +44,13 @@ const AboutFounder = () => (
           {/* Body Content - Industrial Medium weight */}
           <div className="space-y-6 text-base md:text-[18px] text-slate-600 font-medium leading-relaxed max-w-2xl">
             <p>
-              MR Corrugators was founded on a strategic observation: the packaging sector was saturated with inefficiencies that drove costs up while compromising material standards.
+              MR Corrugators is driven by the experience and vision of Mr. Rajesh Kumar Agarwal, a businessman with over 35 years of deep-rooted industry knowledge. Born and raised in Gangtok, Sikkim, his journey has been built on discipline, consistency, and a sharp understanding of how businesses grow and sustain.
             </p>
             <p>
-              By establishing a <span className="text-slate-900 font-bold">direct-to-enterprise</span> manufacturing ecosystem in Siliguri, we ensure every industrial partner accesses high-performance solutions without the traditional corporate markup.
+              Over the years, he has earned a reputation for reliability and long-term thinking—values that are now at the core of MR Corrugators. His approach is simple: focus on quality, build trust, and never compromise on commitments.
+            </p>
+            <p>
+              Today, that same mindset drives the company forward—ensuring every product delivered stands for durability, precision, and dependability.
             </p>
           </div>
 
@@ -55,7 +58,7 @@ const AboutFounder = () => (
           <div className="pt-10 mt-10 border-t border-slate-100 flex items-center justify-between">
             <div>
               <h4 className="text-2xl font-black text-slate-900 tracking-tight uppercase">
-                Yash Agarwal
+                Mr. Rajesh Kumar Agarwal
               </h4>
               <p className="text-[10px] font-bold text-[var(--color-primary-blue)] uppercase tracking-[0.3em] mt-2">
                 Founder & Managing Director
