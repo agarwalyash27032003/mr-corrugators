@@ -31,7 +31,7 @@ export const productData = [
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Duplex%20carton%20box.jpg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Logo%20with%20BG.png?updatedAt=1776526210039"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Duplex%20carton%20box%202.jpg"
     ]
   },
   {
@@ -47,7 +47,8 @@ export const productData = [
       "Ideal for Light Goods"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20kraft%20box.jpg"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20kraft%20box.jpg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20kraft%20box%202.jpg"
     ]
   },
   {
@@ -79,7 +80,8 @@ export const productData = [
       "Great for Display & Logistics"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20trays.jpg"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20trays.jpg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20trays%202.jpg"
     ]
   },
   {
@@ -103,7 +105,7 @@ export const productData = [
   {
     id: "plain-tape",
     category: "CelloTapes",
-    name: "Plain BOPP Tape",
+    name: "Plain Tape",
     description:
       "Standard BOPP adhesive tapes used for carton sealing and packaging across industries.",
     features: [
@@ -113,13 +115,14 @@ export const productData = [
       "Long Shelf Life"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Plain%20tapes.jpg"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Plain%20tapes.jpg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Plain%20tapes%202.png"
     ]
   },
   {
     id: "printed-tape",
     category: "CelloTapes",
-    name: "Printed BOPP Tape",
+    name: "Printed Tape",
     description:
       "Custom printed adhesive tapes used for branding, security, and identification of packages.",
     features: [
@@ -129,13 +132,14 @@ export const productData = [
       "Enhances Brand Visibility"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Printed%20tapes.jpg"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Printed%20tapes.jpg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Printed%20tapes%202.png"
     ]
   },
   {
     id: "colored-tape",
     category: "CelloTapes",
-    name: "Colored BOPP Tape",
+    name: "Colored Tape",
     description:
       "Colored adhesive tapes used for coding, sorting, and identification in packaging operations.",
     features: [
@@ -163,7 +167,8 @@ export const productData = [
       "Ideal for Protective Packaging"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20Rolls.jpg"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20Rolls.jpg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20Rolls%202.jpg"
     ]
   },
 
@@ -181,7 +186,8 @@ export const productData = [
       "Excellent Load Stability"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/stretch%20films.jpg"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/stretch%20films.jpg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/stretch%20films%202.jpg"
     ]
   },
 
@@ -199,7 +205,8 @@ export const productData = [
       "Ideal for Fragile Items"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Bubble%20wraps.png"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Bubble%20wraps.png",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Bubble%20wraps%202.jpg"
     ]
   }
 ];

@@ -91,11 +91,11 @@ const ProductDetail = () => {
                 </span>
               </div>
 
-              <h1 className="text-4xl md:text-[5rem] font-black text-slate-900 tracking-tighter leading-[1.0] mb-8 uppercase">
+              <h1 className="text-4xl md:text-[3rem] font-black text-slate-900 tracking-tighter leading-[1.0] mb-8 uppercase">
                 {product.name}
               </h1>
 
-              <p className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed">
+              <p className="text-lg md:text-lg text-slate-500 font-medium leading-relaxed">
                 {product.description}
               </p>
             </header>
