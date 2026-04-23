@@ -9,7 +9,6 @@ const Footer = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 mb-20">
           
-          {/* Brand Column */}
           <div className="md:col-span-4 space-y-8">
             <Link to="/" className="inline-block transition-transform hover:scale-105">
               <img 
@@ -24,7 +23,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-8">
               <span className="h-[1.5px] w-6 bg-[#FFC107]"></span>
@@ -45,7 +43,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Details */}
           <div className="md:col-span-6 lg:pl-12">
             <div className="flex items-center gap-3 mb-8">
               <span className="h-[1.5px] w-6 bg-[#FFC107]"></span>
@@ -84,13 +81,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar - Redesigned for Center Credit */}
         <div className="pt-10 border-t border-slate-200">
           <div className="flex flex-col items-center text-center space-y-6">
             
-            
-
-            {/* Copyright and Legal Links */}
             <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6">
               <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">
                 © {currentYear} <span className="text-slate-900">MR Corrugators</span>. All rights reserved.
@@ -106,7 +99,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Managed By - Center & Larger */}
             <p className="text-[12px] font-black text-slate-500 uppercase tracking-[0.25em]">
               Developed and managed by{' '}
               <a 

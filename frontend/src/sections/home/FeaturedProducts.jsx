@@ -31,7 +31,7 @@ const FeaturedProducts = () => {
               {/* Image - More compact aspect ratio */}
               <div className="aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 mb-6 relative transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-1">
                 <img 
-                  src={p.image} 
+                  src={p.images?.[0]} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                   alt={p.name} 
                 />

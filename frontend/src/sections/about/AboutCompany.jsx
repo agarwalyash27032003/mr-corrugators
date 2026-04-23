@@ -14,7 +14,6 @@ const AboutCompany = () => {
     <section className="py-32 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
         
-        {/* Section 01 - Header Content */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-24 mb-24">
           <div className="lg:w-1/2">
             <div className="flex items-center gap-3 mb-8">
@@ -30,7 +29,6 @@ const AboutCompany = () => {
             </h2>
           </div>
 
-          {/* 4 Paragraph Content Block */}
           <div className="lg:w-1/2 lg:pt-16">
             <div className="space-y-8">
               <p className="text-lg md:text-xl text-slate-900 font-bold leading-snug">
@@ -57,7 +55,6 @@ const AboutCompany = () => {
           </div>
         </div>
 
-        {/* Section 02 - Continuous Gallery */}
         <div className="mb-32 relative">
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
@@ -81,9 +78,7 @@ const AboutCompany = () => {
           </div>
         </div>
 
-        {/* Section 03 - Core Values Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-slate-200 border border-slate-200 rounded-[2.5rem] overflow-hidden shadow-sm">
-          {/* Core Values Items (01, 02, 03) remains as before... */}
           <div className="bg-white p-14 hover:bg-slate-50 transition-all group">
             <div className="flex justify-between items-start mb-12">
               <span className="text-[#0B5ED7] font-black text-[10px] tracking-[0.2em] uppercase">01. Clarity</span>

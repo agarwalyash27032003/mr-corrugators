@@ -40,7 +40,7 @@ const ProductList = () => {
                     {/* Square Image Container with Hover Lift */}
                     <div className="aspect-square rounded-2xl overflow-hidden bg-slate-50 mb-6 border border-slate-200 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-slate-200 group-hover:-translate-y-2">
                       <img 
-                        src={product.image} 
+                        src={product.images?.[0]} 
                         alt={product.name} 
                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                       />

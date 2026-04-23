@@ -11,6 +11,7 @@ import ProductsPage from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import ContactPage from './pages/Contact';
 import AboutUs from './pages/AboutUs';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 /**
  * ScrollToTop Helper: 
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
           
           {/* 404 Fallback */}
           <Route path="*" element={

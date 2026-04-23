@@ -5,7 +5,6 @@ const Counter = ({ end, duration = 2000, suffix = "" }) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
 
-  // Intersection Observer to trigger animation on scroll
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -18,7 +17,6 @@ const Counter = ({ end, duration = 2000, suffix = "" }) => {
     return () => observer.disconnect();
   }, []);
 
-  // Animation logic
   useEffect(() => {
     if (!isVisible) return;
 
@@ -27,14 +25,13 @@ const Counter = ({ end, duration = 2000, suffix = "" }) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       
-      // Easing function (easeOutExpo) makes it slow down at the end
       const easeOut = 1 - Math.pow(2, -10 * progress);
       setCount(Math.floor(easeOut * end));
 
       if (progress < 1) {
         window.requestAnimationFrame(step);
       } else {
-        setCount(end); // Ensure it lands exactly on the end number
+        setCount(end);
       }
     };
 

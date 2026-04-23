@@ -36,6 +36,7 @@ const Hero = () => (
 
     {/* Content */}
     <div className="container mx-auto px-6 relative z-10 max-w-7xl">
+      
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -53,7 +54,7 @@ const Hero = () => (
 
         {/* Headline */}
         <h1 className="text-5xl md:text-[4.8rem] font-black text-white leading-[0.95] tracking-tighter mb-8">
-          Precision <br/>
+          One Stop <br/>
           <span className="text-[#FFC107]">Packaging</span>{" "}
           <span className="relative inline-block">
             Solutions.
@@ -63,8 +64,7 @@ const Hero = () => (
 
         {/* Description */}
         <p className="text-[18px] text-slate-300 font-medium mb-12 max-w-lg leading-relaxed">
-          High-performance corrugated engineering for global supply chains. 
-          Built for <span className="text-white font-bold">durability</span> and scale.
+          Packaging manufacturers of high-quality packaging solutions. One Stop Packaging Solutions for all your needs!
         </p>
 
         {/* CTA */}
@@ -105,6 +105,15 @@ const Hero = () => (
 
         </div>
       </motion.div>
+
+      <div className="hidden lg:flex absolute right-20 top-1/2 -translate-y-1/2 z-10">
+        <img
+          src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Logo%20with%20BG.png?updatedAt=1776526210039"
+          alt="Company Logo"
+          className="w-40 opacity-90 object-contain"
+        />
+      </div>
+
     </div>
   </section>
 );

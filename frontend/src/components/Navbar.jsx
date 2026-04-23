@@ -17,10 +17,8 @@ const Navbar = () => {
     <nav className="fixed top-5 left-0 w-full z-[100] pt-2">
       <div className="container mx-auto max-w-6xl px-6">
         
-        {/* Main Navbar Container - Locked Glass Style */}
         <div className="relative flex justify-between items-center px-8 py-3 border border-white/20 bg-white/80 backdrop-blur-md shadow-lg rounded-full transition-all duration-300">
           
-          {/* Logo */}
           <Link to="/" className="relative z-10 flex items-center gap-2 group">
             <img 
               src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Logo%20with%20BG.png?updatedAt=1776526210039" 
@@ -29,7 +27,6 @@ const Navbar = () => {
             />
           </Link>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
@@ -38,7 +35,6 @@ const Navbar = () => {
                 <Link 
                   key={link.name} 
                   to={link.path} 
-                  // Increased text size from 11px to 14px and adjusted spacing
                   className="relative text-[14px] font-bold uppercase tracking-wider transition-colors duration-300"
                   style={{ color: isActive ? '#0B5ED7' : '#475569' }}
                 >
@@ -56,7 +52,6 @@ const Navbar = () => {
               );
             })}
             
-            {/* CTA */}
             <Link 
               to="/contact" 
               className="group relative overflow-hidden bg-[#0B5ED7] text-white px-8 py-3 rounded-xl text-[13px] font-extrabold uppercase tracking-widest transition-all hover:bg-[#FFD700] hover:text-black active:scale-95 shadow-md hover:shadow-lg"
@@ -66,7 +61,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Toggle */}
           <button 
             onClick={() => setIsOpen(!isOpen)} 
             className="md:hidden relative z-10 p-2 text-slate-900"
@@ -81,7 +75,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div 

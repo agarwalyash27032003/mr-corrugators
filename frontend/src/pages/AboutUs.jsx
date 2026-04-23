@@ -8,7 +8,7 @@ import MissionVision from "../sections/about/MissionVision"
 const AboutUs = () => {
   return (
     <>
-      <main> {/* Offset for sticky navbar */}
+      <main>
         <AboutCompany />
         <AboutFounder />
         <MissionVision />

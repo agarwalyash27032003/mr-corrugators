@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* In your CSS */
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 @theme {
   /* 🔵 PRIMARY (Professional Blue) */
   --color-primary-blue: #0B5ED7;
