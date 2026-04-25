@@ -26,10 +26,7 @@ const ContactForm = () => {
     setResponseMsg("");
 
     try {
-      const res = await axios.post(
-        "http://localhost:8080/api/contact",
-        formData
-      );
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, formData)
 
       setResponseMsg(res.data.message);
 
@@ -90,7 +87,7 @@ const ContactForm = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Yash Agarwal"
+                  placeholder="MR Corrugators"
                   required
                   className="w-full p-4 px-6 rounded-2xl bg-white border border-slate-200"
                 />
@@ -98,15 +95,15 @@ const ContactForm = () => {
 
               <div className="space-y-3">
                 <label className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] ml-1">
-                  Business Email
+                  Email
                 </label>
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="yash@mrcorrugators.com"
-                  required
+                  placeholder="mrcorrugators@gmail.com"
+                  
                   className="w-full p-4 px-6 rounded-2xl bg-white border border-slate-200"
                 />
               </div>
