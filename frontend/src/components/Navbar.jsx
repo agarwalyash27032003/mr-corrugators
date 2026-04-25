@@ -65,7 +65,7 @@ const Navbar = () => {
               to="/contact"
               className="group relative overflow-hidden bg-[#0B5ED7] text-white px-8 py-3 rounded-xl text-[13px] font-extrabold uppercase tracking-widest transition-all hover:bg-[#FFD700] hover:text-black active:scale-95 shadow-md hover:shadow-lg"
             >
-              <span className="relative z-10">Start Project</span>
+              <span className="relative z-10">Enquire Now!</span>
             </Link>
           </div>
 
@@ -122,7 +122,7 @@ const Navbar = () => {
                 className="w-full bg-[#0B5ED7] text-white py-4 rounded-2xl text-center font-bold uppercase tracking-widest active:scale-95 transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                Start Project
+                Enquire Now!
               </Link>
             </div>
           </motion.div>

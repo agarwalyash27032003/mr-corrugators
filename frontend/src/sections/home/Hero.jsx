@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import "../../index.css"
 
 const Hero = () => (
   <section className="relative h-screen flex items-center overflow-hidden bg-slate-950">
@@ -45,20 +46,20 @@ const Hero = () => (
           </span>
         </div>
 
-        <h1 className="text-5xl md:text-[4.8rem] font-black text-white leading-[0.95] tracking-tighter mb-8">
+        <h1 className="text-4xl md:text-[4.8rem] font-black text-white leading-[0.95] tracking-tighter mb-8">
           One Stop <br/>
           <span className="text-[#FFC107]">Packaging</span>{" "}
           <span className="relative inline-block">
             Solutions.
-            <div className="absolute bottom-1 left-0 w-full h-2 bg-[#FFC107] -z-10 shadow-[0_2px_10px_rgba(255,193,7,0.25)]"></div>
+            <div className="absolute bottom-1 left-0 w-full h-1.5 md:h-2 bg-[#FFC107] -z-10 shadow-[0_2px_10px_rgba(255,193,7,0.25)]"></div>
           </span>
         </h1>
 
-        <p className="text-[18px] text-slate-300 font-medium leading-relaxed">
+        <p className="hero-text text-slate-300 font-medium leading-relaxed">
           Manufacturers of high-quality packaging solutions. One Stop Packaging Solutions for all your needs!
         </p>
         
-        <p className="text-[18px] text-slate-300 font-medium mb-12 leading-relaxed mt-4">
+        <p className="hero-text text-slate-300 font-medium mb-6 md:mb-12 leading-relaxed mt-4">
           MR Corrugators is a manufacturer of Carton Boxes, Cello Tapes, Corrugated Packaging Rolls, Stretch Films, and Bubble Wrap, supporting businesses with a complete one-stop packaging solution for all their packaging needs.
         </p>
 

@@ -70,3 +70,27 @@ body, html {
            hover:bg-[var(--color-accent-yellow-dark)] hover:scale-[1.02];
   }
 }
+
+@media screen and (max-width: 420px){
+  .hero-text{
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 420px){
+  .hero-text{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 480px){
+  .hero-text{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 620px){
+  .hero-text{
+    font-size: 18px;
+  }
+}
