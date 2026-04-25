@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   const stats = [
-    { value: 500, suffix: "+", label: "Global Clients" },
-    { value: 1.2, suffix: "M", label: "Units Produced" },
-    { value: 15, suffix: "+", label: "Years Experience" },
+    { value: 300, suffix: "+", label: "Clients" },
+    { value: 10000, suffix: "+", label: "Boxes Produced Daily" },
+    { value: 8, suffix: "+", label: "Years Experience" },
+    { value: 5, suffix: "", label: "Customer Satisfaction" },
   ]; 
 
   return (

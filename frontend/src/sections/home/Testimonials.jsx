@@ -27,8 +27,7 @@ const Testimonials = () => {
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter leading-[1.05]">
-              Trusted by <span className="text-[#0B5ED7]">Industry</span> <br/> 
-              <span className="text-slate-400">Leaders Worldwide.</span>
+              Trusted by <span className="text-[#0B5ED7]">Industry</span> <br/>
             </h2>
           </div>
           

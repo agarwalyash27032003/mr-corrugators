@@ -64,7 +64,7 @@ const Hero = () => (
 
         {/* Description */}
         <p className="text-[18px] text-slate-300 font-medium mb-12 max-w-lg leading-relaxed">
-          Packaging manufacturers of high-quality packaging solutions. One Stop Packaging Solutions for all your needs!
+          Manufacturers of high-quality packaging solutions. One Stop Packaging Solutions for all your needs!
         </p>
 
         {/* CTA */}

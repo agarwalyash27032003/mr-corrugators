@@ -15,7 +15,10 @@ export const productData = [
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Carton%20Box%201.jpg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20duplex%20box.png?updatedAt=1776610807785",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Carton_box-removebg-preview.png"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Carton_box-removebg-preview.png",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/flipkart-corrugated-box-500x500.jpg.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/corrugated-box-printing-service.jpg.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/5x5x5-2.jpg%20(1).jpeg"
     ]
   },
   {
@@ -31,7 +34,6 @@ export const productData = [
       "Perfect for Retail Packaging"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/cb%201.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/cb%20d%201.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/printed-laminated-duplex-box-1723017134-7555040-removebg-preview.png"
     ]
@@ -52,7 +54,8 @@ export const productData = [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20kraft%20box.jpg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20kraft%20box%202.jpg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/742sef.jpg.jpeg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/51HGXZ7Nw-L.jpg.jpeg"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/51HGXZ7Nw-L.jpg.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Gemini_Generated_Image_pqypxapqypxapqyp.png"
     ]
   },
   {
@@ -68,7 +71,8 @@ export const productData = [
       "Ideal for Branding"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Gemini_Generated_Image_pqypxapqypxapqyp.png"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Duplex-Boxes.jpg.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Duplex-box.jpg.jpeg"
     ]
   },
   {
@@ -121,7 +125,6 @@ export const productData = [
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Plain%20tapes.jpg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Plain%20tapes%202.png",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/tape.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/71O8cqpkl4L._AC_UF1000,1000_QL80_.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/BOPPTape_600x600.jpg.jpeg"
@@ -141,7 +144,6 @@ export const productData = [
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Printed%20tapes.jpg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Printed%20tapes%202.png",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/20220328_110611297081_9f2cad_Clear_tape.jpg.jpeg"
     ]
   },
@@ -158,7 +160,7 @@ export const productData = [
       "Enhances Brand Visibility"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/2-milky-white-with-double-colour-printed-tape-2216377752-a60td14k.jpg.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Printed%20tapes%202.png",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/03e57c_45c4400739de4445bb4672c94f09bac6~mv2.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/customse-printed-tape-500x500.jpg.jpeg"
     ]
@@ -195,11 +197,11 @@ export const productData = [
       "Ideal for Protective Packaging"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20Rolls.jpg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20Rolls%202.jpg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/corrugated-kraft-paper-plain-1-ply-corrugated-roll-gsm-80-140-gsm-2217595122-dir9g25a.jpg.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20Rolls%202.jpg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/2-ply-corrugated-roll-500x500.jpg.jpeg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/5-Ply-Corrugated-Roll..jpg.jpeg"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/5-Ply-Corrugated-Roll..jpg.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20Rolls.jpg",
     ]
   },
   {
@@ -254,8 +256,8 @@ export const productData = [
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Bubble%20wraps.png",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/bubble%20wrap.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Bubble%20wraps%202.jpg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/bubble%20wrap.jpeg"
     ]
   }
 ];
