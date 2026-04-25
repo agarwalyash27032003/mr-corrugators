@@ -12,7 +12,7 @@ import ProductDetail from './pages/ProductDetail';
 import ContactPage from './pages/Contact';
 import AboutUs from './pages/AboutUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
-import WhatsAppCTA from './components/WhatsappCTA';
+import WhatsAppCTA from './components/WhatsAppCTA';
 
 /**
  * ScrollToTop Helper: 
