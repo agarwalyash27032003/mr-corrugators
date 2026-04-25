@@ -12,6 +12,7 @@ import ProductDetail from './pages/ProductDetail';
 import ContactPage from './pages/Contact';
 import AboutUs from './pages/AboutUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import WhatsAppCTA from './components/WhatsappCTA';
 
 /**
  * ScrollToTop Helper: 
@@ -33,6 +34,8 @@ const App = () => {
       
       {/* 2. Global Navbar (Stays on every page) */}
       <Navbar />
+
+      <WhatsAppCTA/>
 
       {/* 3. Dynamic Content Area */}
       <main className="min-h-screen">

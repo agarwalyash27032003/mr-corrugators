@@ -123,8 +123,11 @@ const PrivacyPolicy = () => {
               <a href="mailto:mrcorrugators@gmail.com" className="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-slate-800 transition-colors">
                 mrcorrugators@gmail.com
               </a>
-              <a href="tel:+917363942736" className="border-2 border-slate-900 text-slate-900 px-8 py-4 rounded-xl font-bold text-center hover:bg-slate-900 hover:text-white transition-all">
-                +91 73639 42736
+              <a href="tel:+919382809594" className="border-2 border-slate-900 text-slate-900 px-8 py-4 rounded-xl font-bold text-center hover:bg-slate-900 hover:text-white transition-all">
+                +91 93828 09594
+              </a>
+              <a href="tel:+916294450747" className="border-2 border-slate-900 text-slate-900 px-8 py-4 rounded-xl font-bold text-center hover:bg-slate-900 hover:text-white transition-all">
+                +91 62944 50747
               </a>
             </div>
           </div>

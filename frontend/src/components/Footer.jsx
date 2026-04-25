@@ -53,10 +53,16 @@ const Footer = () => {
               <div className="space-y-2">
                 <p className="text-[10px] font-black text-[#0B5ED7] uppercase tracking-widest">Support Line</p>
                 <a 
-                  href="tel:+916294450747" 
+                  href="tel:+919382809594" 
                   className="block text-2xl font-black text-slate-900 hover:bg-[#FFC107] px-1 transition-all w-fit"
                 >
                   +91 93828 09594
+                </a>
+                <a 
+                  href="tel:+916294450747" 
+                  className="block text-2xl font-black text-slate-900 hover:bg-[#FFC107] px-1 transition-all w-fit"
+                >
+                  +91 62944 50747
                 </a>
               </div>
 
