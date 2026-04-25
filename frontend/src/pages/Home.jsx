@@ -8,9 +8,9 @@ import About from '../sections/home/About';
 const Home = () => (
   <>
     <Hero />
-    <LogoSlider />
-    <About />
+    {/* <LogoSlider /> */}
     <FeaturedProducts />
+    <About />
     <Testimonials />
     <FAQ />
   </>

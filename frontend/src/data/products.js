@@ -5,11 +5,11 @@ export const productData = [
     category: "Carton Box",
     name: "Kraft Box",
     description:
-      "Durable corrugated boxes made from high-quality kraft paper, ideal for heavy-duty packaging, storage, and transportation.",
+      "Duplex packaging boxes are premium durable cartons made from  high-quality duplex board, offering a smooth surface for sharp printing and strong product protection. Ideal for FMCG, pharma, cosmetics, and retail packaging.",
     features: [
+      "Custom Sizing Available",
       "High Bursting Strength",
       "Eco-friendly & Recyclable",
-      "Available in 3/5/7 Ply",
       "Suitable for Industrial Shipping"
     ],
     images: [
@@ -25,9 +25,9 @@ export const productData = [
     category: "Carton Box",
     name: "Duplex Box",
     description:
-      "Premium packaging boxes with a white-coated outer surface, ideal for high-quality printing and retail packaging.",
+      "Duplex packaging boxes are premium durable cartons made from  high-quality duplex board, offering a smooth surface for sharp printing and strong product protection. Ideal for FMCG, pharma, cosmetics, and retail packaging.",
     features: [
-      "Smooth & Glossy Finish",
+      "Custom Sizing Available",
       "Excellent Printability",
       "Moisture Resistant Surface",
       "Perfect for Retail Packaging"
@@ -42,10 +42,10 @@ export const productData = [
     category: "Carton Box",
     name: "Mono Kraft Box",
     description:
-      "Lightweight single-layer kraft boxes suitable for packaging of low-weight products with a natural finish.",
+      "Small-sized carton boxes are compact, durable, and ideal for secure packaging of lightweight products, making them perfect for e-commerce shipments.",
     features: [
+      "Custom Sizing Available",
       "Lightweight Construction",
-      "Cost-effective Packaging",
       "Eco-friendly Material",
       "Ideal for Light Goods"
     ],
@@ -62,9 +62,9 @@ export const productData = [
     category: "Carton Box",
     name: "Mono Duplex Box",
     description:
-      "Single-layer duplex packaging widely used in pharmaceuticals, cosmetics, and FMCG sectors.",
+      "Small-sized mono carton boxes made from duplex board are durable and ideal for e-commerce packaging. Custom sizes available to meet platform requirements and enhance product presentation.",
     features: [
-      "High Stiffness",
+      "Custom Sizing Available",
       "Vibrant Printing Support",
       "Compact & Lightweight",
       "Ideal for Branding"
@@ -81,9 +81,9 @@ export const productData = [
     description:
       "Open-top corrugated trays used for storage, transport, and retail display of goods like bottles, fruits, and cans.",
     features: [
+      "Custom Sizing Available",
       "Stackable Design",
       "High Load Capacity",
-      "Easy Handling",
       "Great for Display & Logistics"
     ],
     images: [
@@ -99,10 +99,10 @@ export const productData = [
     description:
       "Reusable plastic corrugated boxes made from polypropylene, designed for long-term and returnable packaging solutions.",
     features: [
+      "Custom Sizing Available",
       "Waterproof & Weather Resistant",
       "Highly Durable",
       "Reusable & Long Life",
-      "Lightweight Material"
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corr%20plastic%20trayus.jpg"
@@ -117,8 +117,8 @@ export const productData = [
     description:
       "Standard BOPP adhesive tapes used for carton sealing and packaging across industries.",
     features: [
+      "Custom Sizing Available",
       "Strong Adhesion",
-      "High Tensile Strength",
       "Available in Brown & Transparent",
       "Long Shelf Life"
     ],
@@ -134,10 +134,10 @@ export const productData = [
     category: "CelloTapes",
     name: "Single Printed Tape",
     description:
-      "Custom printed adhesive tapes used for branding, security, and identification of packages.",
+      "Custom printed tape is made using high-quality adhesives, ensuring strong sealing while effectively showcasing your brand and enabling easy identification of packaging.",
     features: [
+      "Custom Sizing Available",
       "Custom Logo Printing",
-      "Tamper Evident",
       "Strong Adhesion",
       "Enhances Brand Visibility"
     ],
@@ -151,10 +151,10 @@ export const productData = [
     category: "CelloTapes",
     name: "Double Printed Tape",
     description:
-      "Custom printed adhesive tapes used for branding, security, and identification of packages.",
+      "Double Coloured Tape is made using high-quality adhesives, ensuring strong sealing while effectively showcasing your brand and enabling easy identification of packaging.",
     features: [
+      "Custom Sizing Available",
       "Custom Logo Printing",
-      "Tamper Evident",
       "Strong Adhesion",
       "Enhances Brand Visibility"
     ],
@@ -171,9 +171,9 @@ export const productData = [
     description:
       "Colored adhesive tapes used for coding, sorting, and identification in packaging operations.",
     features: [
+      "Custom Sizing Available",
       "Available in Multiple Colors",
       "Strong Adhesion",
-      "Easy Identification",
       "Durable Finish"
     ],
     images: [
@@ -193,7 +193,8 @@ export const productData = [
     features: [
       "Shock Absorption",
       "Flexible & Easy to Wrap",
-      "Ideal for Protective Packaging"
+      "Ideal for Protective Packaging",
+      `From Size.24"-48"`
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/2-ply-corrugated-roll-500x500.jpg.jpeg",
@@ -207,11 +208,12 @@ export const productData = [
     category: "Corrugated Rolls",
     name: "2 Ply Corrugated Rolls - Printed",
     description:
-      "Flexible corrugated rolls used for wrapping, cushioning, and protecting fragile items during transit.",
+      "2 Ply Printed Corrugated Rolls combine cushioning strength with custom branding, offering reliable product protection while enhancing visibility across packaging, logistics, and industrial applications.",
     features: [
       "Shock Absorption",
       "Flexible & Easy to Wrap",
-      "Ideal for Protective Packaging"
+      "Ideal for Protective Packaging",
+      `From Size.24"-48"`
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/pr%20p%201.jpg.jpeg",
