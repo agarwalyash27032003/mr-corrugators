@@ -19,7 +19,7 @@ const Footer = () => {
             </Link>
             <p className="text-slate-600 text-[16px] leading-relaxed max-w-sm font-medium">
               Precision-engineered corrugated solutions for global logistics. Committed to 
-              <span className="text-slate-900 font-bold"> zero-defect manufacturing</span> and sustainability since 2019.
+              <span className="text-slate-900 font-bold"> zero-defect manufacturing</span> and sustainability since 2018.
             </p>
           </div>
 

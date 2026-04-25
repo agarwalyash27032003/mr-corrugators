@@ -42,7 +42,7 @@ const ProductList = () => {
                       <img 
                         src={product.images?.[0]} 
                         alt={product.name} 
-                        className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        className="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-110"
                       />
                       
                       {/* Subtle Tint Overlay */}

@@ -35,7 +35,7 @@ const Hero = () => (
     </div>
 
     {/* Content */}
-    <div className="container mx-auto px-6 relative z-10 max-w-7xl">
+    <div className="container mx-auto px-6 relative z-10 max-w-7xl mt-16">
       
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
@@ -48,7 +48,7 @@ const Hero = () => (
         <div className="flex items-center gap-3 mb-6">
           <span className="h-[2px] w-8 bg-[#FFC107]"></span>
           <span className="text-[#FFC107] font-bold uppercase tracking-[0.25em] text-[11px]">
-            Since 2019 • Manufacturing Excellence
+            Since 2018 • Manufacturing Excellence
           </span>
         </div>
 
@@ -63,8 +63,12 @@ const Hero = () => (
         </h1>
 
         {/* Description */}
-        <p className="text-[18px] text-slate-300 font-medium mb-12 max-w-lg leading-relaxed">
+        <p className="text-[18px] text-slate-300 font-medium leading-relaxed">
           Manufacturers of high-quality packaging solutions. One Stop Packaging Solutions for all your needs!
+        </p>
+        
+        <p className="text-[18px] text-slate-300 font-medium mb-12 leading-relaxed mt-4">
+          MR Corrugators is a manufacturer of Carton Boxes, Cello Tapes, Corrugated Packaging Rolls, Stretch Films, and Bubble Wrap, supporting businesses with a complete one-stop packaging solution for all their packaging needs.
         </p>
 
         {/* CTA */}

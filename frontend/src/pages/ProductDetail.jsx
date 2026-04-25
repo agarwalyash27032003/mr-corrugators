@@ -67,7 +67,7 @@ const ProductDetail = () => {
             animate={{ y: 0, opacity: 1 }}
             className="lg:sticky lg:top-32 rounded-3xl overflow-hidden bg-slate-50 border border-slate-200 shadow-sm"
           >
-            <div className="relative w-full h-full aspect-[4/5]">
+            <div className="relative w-full h-full aspect-[1/1]">
               {product.images?.map((img, index) => (
                 <img
                   key={index}

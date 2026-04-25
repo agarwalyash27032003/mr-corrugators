@@ -15,7 +15,7 @@ const FeaturedProducts = () => {
           <div className="flex items-center gap-3 mb-4">
             <span className="h-[2px] w-8 bg-[#FFC107]"></span>
             <span className="text-[#0B5ED7] font-bold uppercase tracking-[0.25em] text-[10px]">
-              Since 2019 • Featured Range
+              Since 2018 • Featured Range
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter">

@@ -13,12 +13,11 @@ export const productData = [
       "Suitable for Industrial Shipping"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Carton%20Box%201.jpg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20duplex%20box.png?updatedAt=1776610807785",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Carton_box-removebg-preview.png",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/flipkart-corrugated-box-500x500.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/corrugated-box-printing-service.jpg.jpeg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/5x5x5-2.jpg%20(1).jpeg"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/5x5x5-2.jpg%20(1).jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20duplex%20box.png?updatedAt=1776610807785",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Carton_box-removebg-preview.png",
     ]
   },
   {
@@ -197,9 +196,8 @@ export const productData = [
       "Ideal for Protective Packaging"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/corrugated-kraft-paper-plain-1-ply-corrugated-roll-gsm-80-140-gsm-2217595122-dir9g25a.jpg.jpeg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20Rolls%202.jpg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/2-ply-corrugated-roll-500x500.jpg.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/corrugated-kraft-paper-plain-1-ply-corrugated-roll-gsm-80-140-gsm-2217595122-dir9g25a.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/5-Ply-Corrugated-Roll..jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Corrugated%20Rolls.jpg",
     ]

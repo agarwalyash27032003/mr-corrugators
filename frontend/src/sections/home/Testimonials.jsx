@@ -23,7 +23,7 @@ const Testimonials = () => {
             <div className="flex items-center gap-3 mb-4">
               <span className="h-[2px] w-8 bg-[#FFC107]"></span>
               <span className="text-[#0B5ED7] font-bold uppercase tracking-[0.25em] text-[10px]">
-                Since 2019 • Industry Feedback
+                Since 2018 • Industry Feedback
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter leading-[1.05]">
