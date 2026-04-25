@@ -26,7 +26,10 @@ const ContactForm = () => {
     setResponseMsg("");
 
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, formData)
+      const res = await axios.post(
+  "https://mr-corrugators-backend.onrender.com/api/contact",
+  formData
+);
 
       setResponseMsg(res.data.message);
 
