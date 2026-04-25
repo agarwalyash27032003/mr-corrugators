@@ -8,7 +8,7 @@ const About = () => {
     { value: 300, suffix: "+", label: "Clients" },
     { value: 10000, suffix: "+", label: "Boxes Produced Daily" },
     { value: 8, suffix: "+", label: "Years Experience" },
-    { value: 5, suffix: "", label: "Customer Satisfaction" },
+    { value: 5, suffix: "★", label: "Customer Satisfaction" },
   ]; 
 
   return (
