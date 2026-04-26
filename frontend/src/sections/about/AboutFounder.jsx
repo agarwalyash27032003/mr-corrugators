@@ -55,7 +55,7 @@ const AboutFounder = () => (
         <div className="w-full lg:w-5/12 relative group order-2 lg:order-1">
           <div className="relative z-10 rounded-2xl overflow-hidden aspect-[4/5] lg:aspect-square bg-slate-100 shadow-2xl shadow-slate-200">
             <img
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000"
+              src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Founder.png"
               className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105"
               alt="Yash Agarwal - Founder"
             />
