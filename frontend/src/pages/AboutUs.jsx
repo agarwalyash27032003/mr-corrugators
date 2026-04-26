@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import AboutCompany from '../sections/about/AboutCompany';
 import AboutFounder from '../sections/about/AboutFounder';
 import MissionVision from "../sections/about/MissionVision"
+import AboutPoints from '../sections/about/AboutPoints';
 
 const AboutUs = () => {
   return (
@@ -11,6 +12,7 @@ const AboutUs = () => {
       <main>
         <AboutCompany />
         <AboutFounder />
+        <AboutPoints />
         <MissionVision />
         
       </main>

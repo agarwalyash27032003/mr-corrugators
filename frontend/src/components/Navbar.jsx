@@ -28,8 +28,8 @@ const Navbar = () => {
             />
 
             {/* Hidden on mobile, visible on md+ */}
-            <div className="hidden lg:flex flex-col leading-tight">
-              <span className="text-[24px] font-black text-[#0B5ED7] tracking-tight">
+            <div className="flex md:hidden lg:flex flex-col leading-tight">
+              <span className="navbar-h font-black text-[#0B5ED7] tracking-tight">
                 MR Corrugators
               </span>
             </div>

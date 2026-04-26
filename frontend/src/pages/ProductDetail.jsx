@@ -152,7 +152,7 @@ const ProductDetail = () => {
           <div className="flex items-center gap-3 mb-16">
             <span className="h-[2px] w-8 bg-[#FFC107]"></span>
             <h2 className="text-[11px] font-black text-slate-900 uppercase tracking-[0.4em]">
-              Related Solutions
+              Related Products
             </h2>
           </div>
 

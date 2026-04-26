@@ -18,16 +18,16 @@ const ContactInfo = () => (
           <div className="space-y-3">
             <p className="text-[10px] font-black text-[#0B5ED7] uppercase tracking-widest">Support Line</p>
             <a 
-              href="tel:+919382809594" 
-              className="block text-3xl font-black text-slate-900 hover:bg-[#FFC107] px-1 transition-all w-fit tracking-tighter"
-            >
-              +91 93828 09594
-            </a>
-            <a 
               href="tel:+916294450747" 
               className="block text-3xl font-black text-slate-900 hover:bg-[#FFC107] px-1 transition-all w-fit tracking-tighter"
             >
               +91 62944 50747
+            </a>
+            <a 
+              href="tel:+919382809594" 
+              className="block text-3xl font-black text-slate-900 hover:bg-[#FFC107] px-1 transition-all w-fit tracking-tighter"
+            >
+              +91 93828 09594
             </a>
           </div>
           <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-6">

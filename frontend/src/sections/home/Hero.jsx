@@ -46,7 +46,7 @@ const Hero = () => (
           </span>
         </div>
 
-        <h1 className="text-4xl md:text-[4.8rem] font-black text-white leading-[0.95] tracking-tighter mb-8">
+        <h1 className="hero-h font-black text-white leading-[0.95] tracking-tighter mb-8">
           One Stop <br/>
           <span className="text-[#FFC107]">Packaging</span>{" "}
           <span className="relative inline-block">
@@ -55,12 +55,8 @@ const Hero = () => (
           </span>
         </h1>
 
-        <p className="hero-text text-slate-300 font-medium leading-relaxed">
-          Manufacturers of high-quality packaging solutions. One Stop Packaging Solutions for all your needs!
-        </p>
-        
-        <p className="hero-text text-slate-300 font-medium mb-6 md:mb-12 leading-relaxed mt-4">
-          MR Corrugators is a manufacturer of Carton Boxes, Cello Tapes, Corrugated Packaging Rolls, Stretch Films, and Bubble Wrap, supporting businesses with a complete one-stop packaging solution for all their packaging needs.
+        <p className="hero-text text-slate-300 font-medium leading-relaxed mb-4 md:mb-8">
+          Manufacturers of high-quality packaging solutions. One Stop Packaging Solutions for all your needs. MR Corrugators is a manufacturer of Carton Boxes, Cello Tapes, Corrugated Packaging Rolls, Stretch Films, and Bubble Wrap, supporting businesses with a complete one-stop packaging solution for all their packaging needs.
         </p>
 
         <div className="flex flex-wrap gap-5 items-center">

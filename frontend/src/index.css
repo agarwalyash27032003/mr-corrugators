@@ -71,15 +71,36 @@ body, html {
   }
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 347px){
   .hero-text{
     font-size: 12px;
+  }
+  .hero-h{
+    font-size: 2.5rem;
+  }
+  .navbar-h{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 347px){
+  .hero-text{
+    font-size: 13px;
+  }
+  .hero-h{
+    font-size: 2.5rem;
+  }
+  .navbar-h{
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 420px){
   .hero-text{
     font-size: 14px;
+  }
+  .hero-h{
+    font-size: 3.25rem;
   }
 }
 
@@ -92,5 +113,11 @@ body, html {
 @media screen and (min-width: 620px){
   .hero-text{
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .hero-h{
+    font-size: 4.8rem;
   }
 }

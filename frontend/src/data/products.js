@@ -5,7 +5,7 @@ export const productData = [
     category: "Carton Box",
     name: "Kraft Box",
     description:
-      "Duplex packaging boxes are premium durable cartons made from  high-quality duplex board, offering a smooth surface for sharp printing and strong product protection. Ideal for FMCG, pharma, cosmetics, and retail packaging.",
+      "Kraft boxes are durable, eco-friendly packaging solutions. They feature a fluted, layered structure that provides superior rigidity for storing and shipping, featuring a natural brown, rustic appearance. They are highly versatile, recyclable, and customizable for branding.",
     features: [
       "Custom Sizing Available",
       "High Bursting Strength",
@@ -13,10 +13,10 @@ export const productData = [
       "Suitable for Industrial Shipping"
     ],
     images: [
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/flipkart-corrugated-box-500x500.jpg.jpeg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/corrugated-box-printing-service.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/5x5x5-2.jpg%20(1).jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20duplex%20box.png?updatedAt=1776610807785",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/flipkart-corrugated-box-500x500.jpg.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/corrugated-box-printing-service.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Carton_box-removebg-preview.png",
     ]
   },
@@ -51,10 +51,10 @@ export const productData = [
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20kraft%20box.jpg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Gemini_Generated_Image_pqypxapqypxapqyp.png",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20kraft%20box%202.jpg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/742sef.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/51HGXZ7Nw-L.jpg.jpeg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Gemini_Generated_Image_pqypxapqypxapqyp.png"
     ]
   },
   {
@@ -115,7 +115,7 @@ export const productData = [
     category: "CelloTapes",
     name: "Plain Tape",
     description:
-      "Standard BOPP adhesive tapes used for carton sealing and packaging across industries.",
+      "Plain BOPP and brown tapes are high-quality adhesive solutions designed for strong sealing, smooth application, and reliable performance, widely used across packaging, logistics, manufacturing, and various industrial applications.",
     features: [
       "Custom Sizing Available",
       "Strong Adhesion",
@@ -194,7 +194,7 @@ export const productData = [
       "Shock Absorption",
       "Flexible & Easy to Wrap",
       "Ideal for Protective Packaging",
-      `From Size.24"-48"`
+      `Available in Sizes 24" TO 48"`
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/2-ply-corrugated-roll-500x500.jpg.jpeg",
@@ -210,10 +210,11 @@ export const productData = [
     description:
       "2 Ply Printed Corrugated Rolls combine cushioning strength with custom branding, offering reliable product protection while enhancing visibility across packaging, logistics, and industrial applications.",
     features: [
+      "Best for Branding",
       "Shock Absorption",
       "Flexible & Easy to Wrap",
       "Ideal for Protective Packaging",
-      `From Size.24"-48"`
+      `Available in Sizes 24" TO 48"`,
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/pr%20p%201.jpg.jpeg",

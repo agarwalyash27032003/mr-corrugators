@@ -11,7 +11,7 @@ const AboutCompany = () => {
   ];
 
   return (
-    <section className="py-32 bg-white">
+    <section className="pt-32 pb-8 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
         
         <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-24 mb-24">
@@ -75,41 +75,6 @@ const AboutCompany = () => {
                 </div>
               ))}
             </motion.div>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-slate-200 border border-slate-200 rounded-[2.5rem] overflow-hidden shadow-sm">
-          <div className="bg-white p-14 hover:bg-slate-50 transition-all group">
-            <div className="flex justify-between items-start mb-12">
-              <span className="text-[#0B5ED7] font-black text-[10px] tracking-[0.2em] uppercase">01. Clarity</span>
-              <div className="w-8 h-8 rounded-full border border-slate-100 flex items-center justify-center group-hover:bg-[#FFC107] group-hover:border-[#FFC107] transition-all">
-                <span className="text-slate-300 group-hover:text-slate-900">→</span>
-              </div>
-            </div>
-            <h3 className="text-3xl font-black text-slate-900 tracking-tight mb-6">Requirement <br/>First.</h3>
-            <p className="text-slate-500 leading-relaxed font-medium text-[15px]">Our process is rooted in understanding. We analyze specific logistics requirements to deliver high-performance corrugated solutions.</p>
-          </div>
-
-          <div className="bg-white p-14 hover:bg-slate-50 transition-all group border-x border-slate-100">
-            <div className="flex justify-between items-start mb-12">
-              <span className="text-[#0B5ED7] font-black text-[10px] tracking-[0.2em] uppercase">02. Integrity</span>
-              <div className="w-8 h-8 rounded-full border border-slate-100 flex items-center justify-center group-hover:bg-[#FFC107] group-hover:border-[#FFC107] transition-all">
-                <span className="text-slate-300 group-hover:text-slate-900">→</span>
-              </div>
-            </div>
-            <h3 className="text-3xl font-black text-slate-900 tracking-tight mb-6">No <br/>Compromise.</h3>
-            <p className="text-slate-500 leading-relaxed font-medium text-[15px]">From customized tapes to stretch films, we maintain a zero-compromise policy on material density and structural integrity.</p>
-          </div>
-
-          <div className="bg-white p-14 hover:bg-slate-50 transition-all group">
-            <div className="flex justify-between items-start mb-12">
-              <span className="text-[#0B5ED7] font-black text-[10px] tracking-[0.2em] uppercase">03. Scalability</span>
-              <div className="w-8 h-8 rounded-full border border-slate-100 flex items-center justify-center group-hover:bg-[#FFC107] group-hover:border-[#FFC107] transition-all">
-                <span className="text-slate-300 group-hover:text-slate-900">→</span>
-              </div>
-            </div>
-            <h3 className="text-3xl font-black text-slate-900 tracking-tight mb-6">Designed <br/>To Scale.</h3>
-            <p className="text-slate-500 leading-relaxed font-medium text-[15px]">Our facility is designed to scale production rapidly to match your business growth and delivery timelines without loss in quality.</p>
           </div>
         </div>
       </div>
