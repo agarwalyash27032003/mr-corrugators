@@ -143,7 +143,8 @@ export const productData = [
     ],
     images: [
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Printed%20tapes.jpg",
-      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/20220328_110611297081_9f2cad_Clear_tape.jpg.jpeg"
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/20220328_110611297081_9f2cad_Clear_tape.jpg.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/WhatsApp%20Image%202026-04-26%20at%2015.25.53.jpeg?updatedAt=1777199143824"
     ]
   },
   {

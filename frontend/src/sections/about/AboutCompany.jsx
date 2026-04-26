@@ -3,11 +3,10 @@ import { motion } from 'framer-motion';
 
 const AboutCompany = () => {
   const galleryImages = [
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800",
-    "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800",
-    "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800",
-    "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800",
-    "https://images.unsplash.com/photo-1530124560676-587cad3213c3?q=80&w=800"
+    "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/WhatsApp%20Image%202026-04-26%20at%2017.08.08.jpeg",
+    "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/WhatsApp%20Image%202026-04-26%20at%2017.08.09%20(1).jpeg",
+    "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/WhatsApp%20Image%202026-04-26%20at%2017.08.09.jpeg",
+    "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/WhatsApp%20Image%202026-04-26%20at%2017.08.08%20(1).jpeg",
   ];
 
   return (

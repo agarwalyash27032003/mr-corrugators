@@ -51,7 +51,7 @@ const About = () => {
               
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-[8px] border-white group">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000"
+                  src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/WhatsApp%20Image%202026-04-26%20at%2017.08.08%20(1).jpeg"
                   className="w-full h-[400px] lg:h-[550px] object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700" 
                   alt="Industrial Excellence" 
                 />
