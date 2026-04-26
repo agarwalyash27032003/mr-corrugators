@@ -24,7 +24,7 @@ const FeaturedProducts = () => {
         </div>
 
         {/* Grid - Switched to 4 columns to make cards smaller */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {featured.map((p) => (
             <Link to={`/product/${p.id}`} key={p.id} className="group block">
               

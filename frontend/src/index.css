@@ -88,21 +88,30 @@ body, html {
     font-size: 14px;
   }
   .hero-h{
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
   .navbar-h{
     font-size: 20px;
   }
 }
 
-@media screen and (min-width: 420px){
+@media screen and (min-width: 400px){
+  .hero-text{
+    font-size: 17px;
+  }
+  .hero-h{
+    font-size: 3.5rem;
+  }
+}
+
+/* @media screen and (min-width: 420px){
   .hero-text{
     font-size: 14px;
   }
   .hero-h{
     font-size: 3.25rem;
   }
-}
+} */
 
 @media screen and (min-width: 480px){
   .hero-text{
