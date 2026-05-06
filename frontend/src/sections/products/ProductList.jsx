@@ -10,7 +10,7 @@ const ProductList = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         {categories.map((category, index) => (
           <div key={category} className="mb-32 last:mb-0">
-            
+
             {/* Standardized Industrial Category Header */}
             <div className="flex items-center gap-6 mb-16">
               <div className="flex flex-col gap-2">
@@ -32,42 +32,44 @@ const ProductList = () => {
               {productData
                 .filter((item) => item.category === category)
                 .map((product) => (
-                  <Link 
-                    to={`/product/${product.id}`} 
-                    key={product.id} 
+                  <Link
+                    to={`/product/${product.id}`}
+                    key={product.id}
                     className="group block"
                   >
                     {/* Square Image Container with Hover Lift */}
                     <div className="aspect-square rounded-2xl overflow-hidden bg-slate-50 mb-6 border border-slate-200 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-slate-200 group-hover:-translate-y-2">
-                      <img 
-                        src={product.images?.[0]} 
-                        alt={product.name} 
+                      <img
+                        src={product.images?.[0]}
+                        alt={product.name}
                         className="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-110"
                       />
-                      
+
                       {/* Subtle Tint Overlay */}
                       <div className="absolute inset-0 bg-[#0B5ED7]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
-                    
+
                     {/* Industrial Text Hierarchy */}
                     <div className="space-y-3 px-1">
                       <h3 className="text-xl font-black text-slate-900 tracking-tight leading-tight group-hover:text-[#0B5ED7] transition-colors">
                         {product.name}
                       </h3>
-                      
+
                       <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                         Industrial Certified
                       </p>
-                      
+
                       {/* Animated Interaction Line */}
-                      <div className="flex items-center gap-3 pt-1">
-                        <span className="text-[9px] font-black text-slate-900 uppercase tracking-widest">
-                          View Specs
-                        </span>
-                        <div className="relative h-[1.5px] flex-grow bg-slate-100 overflow-hidden">
-                          <div className="absolute inset-0 bg-[#FFC107] -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
+                      <div className="pt-2">
+                        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#0B5ED7] text-[#0B5ED7] text-xs font-black uppercase tracking-wider transition-all duration-300 group-hover:bg-[#0B5ED7] group-hover:text-white group-hover:shadow-md">
+
+                          <span>View Specs</span>
+
+                          <span className="transition-transform duration-300 group-hover:translate-x-1">
+                            →
+                          </span>
+
                         </div>
-                        <span className="text-[#0B5ED7] font-black group-hover:translate-x-1 transition-transform">→</span>
                       </div>
                     </div>
                   </Link>
