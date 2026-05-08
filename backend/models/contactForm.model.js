@@ -22,7 +22,6 @@ const contactSchema = new mongoose.Schema(
       type: String,
       required: [true, "Phone number is required"],
       trim: true,
-      match: [/^[0-9]{10,15}$/, "Please enter a valid phone number"]
     },
 
     message: {

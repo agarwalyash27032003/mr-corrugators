@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="mb-14 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all">
           <iframe
             title="MR Corrugators Location"
-            src="https://www.google.com/maps?q=MR+Corrugators+Siliguri&z=18&output=embed"
+            src="https://www.google.com/maps?q=MR+Corrugators+Siliguri&z=19&output=embed"
             className="w-full h-64 md:h-80"
             loading="lazy"
             allowFullScreen

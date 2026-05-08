@@ -52,7 +52,7 @@ const ProductDetail = () => {
             to="/products"
             className="group text-[10px] font-black text-slate-400 tracking-[0.3em] flex items-center gap-3 hover:text-[#0B5ED7] transition-colors"
           >
-            <span className="text-[#FFC107]">←</span> BACK TO SOLUTIONS
+            <span className="text-[#FFC107]">←</span> BACK TO CATALOGUE
           </Link>
         </div>
       </div>

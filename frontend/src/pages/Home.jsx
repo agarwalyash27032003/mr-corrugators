@@ -8,7 +8,6 @@ import About from '../sections/home/About';
 const Home = () => (
   <>
     <Hero />
-    {/* <LogoSlider /> */}
     <FeaturedProducts />
     <About />
     <Testimonials />

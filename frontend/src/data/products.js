@@ -10,6 +10,7 @@ export const productData = [
       "Custom Sizing Available",
       "High Bursting Strength",
       "Eco-friendly & Recyclable",
+      "Custom Printing Available",
       "Suitable for Industrial Shipping"
     ],
     images: [
@@ -30,6 +31,7 @@ export const productData = [
       "Custom Sizing Available",
       "Excellent Printability",
       "Moisture Resistant Surface",
+      "Custom Printing Available",
       "Perfect for Retail Packaging"
     ],
     images: [
