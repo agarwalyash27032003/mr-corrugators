@@ -9,7 +9,7 @@ const Hero = () => (
     <div className="absolute inset-0">
       
       <motion.img 
-        src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2000"
+        src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/WhatsApp%20Image%202026-05-08%20at%2020.27.00.jpeg"
         className="w-full h-full object-cover"
         alt="Industrial Factory"
         initial={{ scale: 1.05 }}
