@@ -7,10 +7,10 @@ const Hero = () => (
   <section className="relative h-screen flex items-center overflow-hidden bg-slate-950">
 
     <div className="absolute inset-0">
-      
-      <motion.img 
+
+      <motion.img
         src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/WhatsApp%20Image%202026-05-08%20at%2020.27.00.jpeg"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover max-md:object-right" // Focuses on the right side on mobile
         alt="Industrial Factory"
         initial={{ scale: 1.05 }}
         animate={{ scale: 1 }}
@@ -31,14 +31,14 @@ const Hero = () => (
     </div>
 
     <div className="container mx-auto px-6 relative z-10 max-w-7xl mt-32">
-      
-      <motion.div 
+
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="max-w-3xl"
       >
-        
+
         <div className="flex items-center gap-3 mb-6">
           <span className="h-[2px] w-8 bg-[#FFC107]"></span>
           <span className="text-[#FFC107] font-bold uppercase tracking-[0.25em] text-[11px]">
@@ -47,7 +47,7 @@ const Hero = () => (
         </div>
 
         <h1 className="hero-h font-black text-white leading-[0.95] tracking-tighter mb-8">
-          One Stop <br/>
+          One Stop <br />
           <span className="text-[#FFC107]">Packaging</span>{" "}
           <span className="relative inline-block">
             Solution.
@@ -60,17 +60,17 @@ const Hero = () => (
         </p>
 
         <div className="flex flex-wrap gap-5 items-center">
-          
-          <Link 
-            to="/products" 
+
+          <Link
+            to="/products"
             className="px-8 py-4 bg-[#FFC107] text-slate-900 rounded-full font-bold uppercase tracking-widest text-[12px] shadow-lg shadow-yellow-500/10 hover:bg-[#EAB308] active:scale-95 transition-all hover:-translate-y-0.5 flex items-center gap-3"
           >
             Explore Products
             <span className="font-black">→</span>
           </Link>
 
-          <Link 
-            to="/contact" 
+          <Link
+            to="/contact"
             className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold uppercase tracking-widest text-[12px] hover:border-[#FFC107] hover:text-[#FFC107] transition-all"
           >
             Get a Quote
