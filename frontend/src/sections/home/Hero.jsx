@@ -10,7 +10,7 @@ const Hero = () => (
 
       <motion.img
         src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/WhatsApp%20Image%202026-05-08%20at%2020.27.00.jpeg"
-        className="w-full h-full object-cover max-md:object-right" // Focuses on the right side on mobile
+        className="w-full h-full object-cover max-md:object-[80%_center]" // Focuses on the right side on mobile
         alt="Industrial Factory"
         initial={{ scale: 1.05 }}
         animate={{ scale: 1 }}
