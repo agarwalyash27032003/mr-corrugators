@@ -10,7 +10,7 @@ const Hero = () => (
 
       <motion.img
         src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/ChatGPT%20Image%20May%2010,%202026,%2002_18_38%20PM.png"
-        className="w-full h-full object-cover max-md:object-[80%_center]" // Focuses on the right side on mobile
+        className="w-full h-full object-cover max-md:object-[80%_center]"
         alt="Industrial Factory"
         initial={{ scale: 1.05 }}
         animate={{ scale: 1 }}
@@ -22,7 +22,7 @@ const Hero = () => (
       <div className="absolute inset-0"></div>
 
       <div
-        className="absolute inset-0 opacity-[0.04] mix-blend-overlay pointer-events-none"
+        className="absolute inset-0  pointer-events-none"
         style={{
           backgroundImage:
             "url('https://www.transparenttextures.com/patterns/noise.png')",
