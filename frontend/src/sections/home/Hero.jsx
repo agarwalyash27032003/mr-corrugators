@@ -7,28 +7,21 @@ const Hero = () => (
   <section className="relative h-screen flex items-center overflow-hidden bg-slate-950">
 
     <div className="absolute inset-0">
+  {/* 1. The Background Image */}
+  <motion.img
+    src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/ChatGPT%20Image%20May%2010,%202026,%2002_18_38%20PM.png"
+    className="w-full h-full object-cover max-md:object-[80%_center] brightness-[0.8] contrast-[1.1]" 
+    alt="Industrial Factory"
+    initial={{ scale: 1.05 }}
+    animate={{ scale: 1 }}
+    transition={{ duration: 6, ease: "easeOut" }}
+  />
 
-      <motion.img
-        src="https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/ChatGPT%20Image%20May%2010,%202026,%2002_18_38%20PM.png"
-        className="w-full h-full object-cover max-md:object-[80%_center]"
-        alt="Industrial Factory"
-        initial={{ scale: 1.05 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 6, ease: "easeOut" }}
-      />
+  {/* 2. The Dark Overlay (Reduced to 50% for more vibrancy) */}
+  <div className="absolute inset-0 bg-slate-950/50"></div>
 
-      <div className="absolute inset-0 bg-slate-950/60"></div>
-
-      <div className="absolute inset-0"></div>
-
-      <div
-        className="absolute inset-0  pointer-events-none"
-        style={{
-          backgroundImage:
-            "url('https://www.transparenttextures.com/patterns/noise.png')",
-        }}
-      />
-    </div>
+  {/* Noise and empty divs have been removed */}
+</div>
 
     <div className="container mx-auto px-6 relative z-10 max-w-7xl mt-32">
 
