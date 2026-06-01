@@ -15,6 +15,12 @@ app.get("/", (req, res) => {
   res.send("Backend running");
 });
 
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    timestamp: new Date().toISOString(),
+  });
+});
 
 mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB Connected"))
