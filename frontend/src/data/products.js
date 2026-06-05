@@ -72,6 +72,9 @@ export const productData = [
       "Ideal for Branding"
     ],
     images: [
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20duplex%20box%202.png",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20duplex%20box%203.jpeg",
+      "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Mono%20duplex%20box%204.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Duplex-Boxes.jpg.jpeg",
       "https://ik.imagekit.io/bluepeakstudio/MR%20Corrugators/Duplex-box.jpg.jpeg"
     ]
