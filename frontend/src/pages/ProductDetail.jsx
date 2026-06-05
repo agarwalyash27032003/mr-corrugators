@@ -73,7 +73,7 @@ const ProductDetail = () => {
                   key={index}
                   src={img}
                   alt={`${product.name}-${index}`}
-                  className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-400 ${
+                  className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-150 ${
                     index === currentIndex ? "opacity-100" : "opacity-0"
                   }`}
                 />
