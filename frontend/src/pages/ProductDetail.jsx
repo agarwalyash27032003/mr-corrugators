@@ -21,7 +21,7 @@ const ProductDetail = () => {
       setCurrentIndex((prev) =>
         prev === product.images.length - 1 ? 0 : prev + 1
       );
-    }, 2500);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, [product]);
@@ -73,7 +73,7 @@ const ProductDetail = () => {
                   key={index}
                   src={img}
                   alt={`${product.name}-${index}`}
-                  className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-100 ${
+                  className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-400 ${
                     index === currentIndex ? "opacity-100" : "opacity-0"
                   }`}
                 />
